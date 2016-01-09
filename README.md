@@ -5,6 +5,8 @@ Here is something about i understanding
 理智！
 # 1<2<3 //true
 # 3>2>1 //false
+# 1/0   //Infinity
+# -1/0  //-Infinity
 #10 things to master to become a good JavaScript Developer
 Number 10 How does JavaScript work?<br/>
 Number 9 How to test JavaScript?<br/>
