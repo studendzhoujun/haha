@@ -22,3 +22,4 @@ Number 1 How to start learning JavaScript?<br/>
 #代码重构
 #function
 函数应该要有返回值么
+#ES6
