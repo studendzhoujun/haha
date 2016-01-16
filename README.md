@@ -25,3 +25,4 @@ Number 1 How to start learning JavaScript?<br/>
 #ES6
 #原生js
 虽然各种开发工具和js库能很好的提高开发效率;但是我就是比较喜欢纯粹的东西
+#通往成功的道路没有捷径,甚至会有冷嘲热讽,但是你必须相信自己,证明自己
