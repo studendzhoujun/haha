@@ -29,3 +29,4 @@ Number 1 How to start learning JavaScript?<br/>
 #Chrome调试工具还是很不错的developer.chrome.com
 //好像要翻墙
 #通往成功的道路没有捷径,甚至会有冷嘲热讽,但是你必须相信自己,证明自己
+#好吧,数据交互！！！
