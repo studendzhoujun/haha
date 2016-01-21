@@ -31,3 +31,4 @@ Number 1 How to start learning JavaScript?<br/>
 #通往成功的道路没有捷径,甚至会有冷嘲热讽,但是你必须相信自己,证明自己
 #好吧,数据交互！！！
 #zepto 要不要搞一搞！
+#貌似jQuery也得搞一搞！
