@@ -34,3 +34,8 @@ Number 1 How to start learning JavaScript?<br/>
 #貌似jQuery也得搞一搞！
 #gulp
 #各种模块化,好吗？
+#H5标签语义化
+作用：<br/>
+1:有利于搜索引擎的抓取(SEO优化)<br/>
+2:有利于开发人员后期的维护,代码重构<br/>
+3:在没有css样式的驱动下，仍然会以一种清晰的结构出现<br/>
