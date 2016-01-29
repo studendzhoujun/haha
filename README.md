@@ -40,22 +40,22 @@ Number 1 How to start learning JavaScript?<br/>
 2:有利于开发人员后期的维护,代码重构<br/>
 3:在没有css样式的驱动下，仍然会以一种清晰的结构出现<br/>
 #我理解的MVC
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>mvc</title>
-	<style>
-        *{margin:0;padding:0;}
-        div{width:100px;height:100px;background:#090;}
-	</style>
-	<script>
-	   function model(obj){
-             return obj.value;
-	   }
-	   function view(obj){
-           var oDiv=document.createElement('div');
-           oDiv.innerHTML=model(obj);
+1<!DOCTYPE html>
+2<html lang="en">
+3<head>
+4	<meta charset="UTF-8">
+5	<title>mvc</title>
+6	<style>
+7        *{margin:0;padding:0;}
+8        div{width:100px;height:100px;background:#090;}
+9	</style>
+0	<script>
+1	   function model(obj){
+2             return obj.value;
+3	   }
+4	   function view(obj){
+5           var oDiv=document.createElement('div');
+6           oDiv.innerHTML=model(obj);
            document.body.appendChild(oDiv);
 
 	   }
