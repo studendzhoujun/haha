@@ -40,6 +40,6 @@ Number 1 How to start learning JavaScript?<br/>
 2:有利于开发人员后期的维护,代码重构<br/>
 3:在没有css样式的驱动下，仍然会以一种清晰的结构出现<br/>
 #我理解的MVC
-
+#页面静态页编写的注意事项
 
 
