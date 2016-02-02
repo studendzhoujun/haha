@@ -41,5 +41,10 @@ Number 1 How to start learning JavaScript?<br/>
 3:在没有css样式的驱动下，仍然会以一种清晰的结构出现<br/>
 #我理解的MVC
 #页面静态页编写的注意事项
+#ES5
+arr.some();<br/>
+arr.every();<br/>
+arr.map();<br/>
+arr.forEach();<br/>
 
 
