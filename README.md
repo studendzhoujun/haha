@@ -22,6 +22,9 @@ Number 1 How to start learning JavaScript?<br/>
 #代码重构
 #function
 函数应该要有返回值么
+function test(){<br/>
+  return test()<br/>
+}
 #ES6
 #原生js
 虽然各种开发工具和js库能很好的提高开发效率;但是我就是比较喜欢纯粹的东西
@@ -46,5 +49,4 @@ arr.some();<br/>
 arr.every();<br/>
 arr.map();<br/>
 arr.forEach();<br/>
-
 
