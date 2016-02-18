@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>testdiv</title>
+	<style>
+      *{margin:0;padding:0;}
+      span{width:1px;height:250px;background:#090;position:absolute;left:10px;top:0;}
+      em{width:500px;height:1px;background:red;position:absolute;left:0px;top:10px;-webkit-transform:rotate(0deg);}
+      body{background:#111;overflow:hidden;}
+      div{position:absolute;left:300px;top:200px;}
+	</style>
+	<script>
+         window.onload=function(){
+         	var oDiv=document.querySelector('div');
+         	for(var i=0;i<50;i++){
+         		var oS=document.createElement('span');
+         		oS.style.left=(i*10)+'px';
+         		oDiv.appendChild(oS);
+         	}
+         	for(var i=0;i<25;i++){
+         		var oEm=document.createElement('em');
+         		oEm.style.top=(i*10)+'px';
+         		oDiv.appendChild(oEm);
+
+         	}
+         	var aEm=document.querySelectorAll('em');
+         	var aSp=document.querySelectorAll('span');
+         	var n=0;
+             	setInterval(function(){
+             for(var i=0;i<aEm.length;i++){
+             	aEm[i].style.WebkitTransform='rotate('+n+'deg)';
+             	aSp[i].style.WebkitTransform='rotate('+n+'deg)';
+             		n++;
+             		
+             }
+             	},60)
+         };
+	</script>
+</head>
+<body>
+<div>
+<span></span>
+<em></em>
+</div>
+</body>
+</html>
