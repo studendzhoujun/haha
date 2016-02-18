@@ -25,6 +25,7 @@ Number 1 How to start learning JavaScript?<br/>
 function test(){<br/>
   return test()<br/>
 }
+#这个假放的有点长！嘻嘻！！
 #ES6
 #原生js
 虽然各种开发工具和js库能很好的提高开发效率;但是我就是比较喜欢纯粹的东西
