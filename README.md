@@ -58,3 +58,5 @@ arr.forEach();<br/>
 #事件驱动
 事件收集器，事件发送器，事件处理器<br/>
 单线程，多线程
+# css3 box-shadow
+box-shadow {inset 1px 1px 1px 1px color}<br/>
