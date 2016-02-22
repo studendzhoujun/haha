@@ -60,3 +60,5 @@ arr.forEach();<br/>
 单线程，多线程
 # css3 box-shadow
 box-shadow {inset 1px 1px 1px 1px color}<br/>
+inset：写表示内阴影，不写表示外阴影;<br/>
+第一个数字表示左右偏移；第二个数字表示上下偏移；第三个数字表示模糊度；第四个数字表示阴影范围；最后表示阴影颜色；
