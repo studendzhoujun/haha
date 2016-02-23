@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tt</title>
+	<style>
+     *{margin:0;padding:0;}
+     div{width:400px;height:100px;background:#090;}
+	</style>
+	<script>
+       function rnd(n,m){
+       	return parseInt(n+Math.random()*(m-n));
+       }
+       function addEvent(obj,sEv,fn){
+       	   if(obj.addEventListener){
+       	   	obj.addEventListener(sEv,fn,false)
+       	   }else{
+       	   	obj.attachEvent('on'+sEv,fn)
+       	   }
+       }
+       function addWheel(obj,fn){
+       	function fnwheel(ev){
+             var oEvent=ev||event;
+             var beok=true;
+             beok=oEvent.wheelDelta?oEvent.wheelDelta<1:oEvent.detail>1;
+             fn&&fn(beok);
+             oEvent.preventDefault&&oEvent.preventDefault();
+             return false;
+       	}
+       	  if(window.navigator.userAgent.indexOf('Firefox')!=-1){
+       	  	addEvent(obj,'DOMMouseScroll',fnwheel)
+       	  }else{
+       	  	addEvent(obj,'mousewheel',fnwheel)
+       	  }
+       }
+       window.onload=function(){
+       	var oDiv=document.querySelector('div');
+       	addWheel(oDiv,function(dir){
+            if(dir){
+            	oDiv.style.height=oDiv.offsetHeight+10+'px';
+            }else{
+            	oDiv.style.height=oDiv.offsetHeight-10+'px';
+            }
+       	})
+       };
+	</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
