@@ -3,6 +3,7 @@ Here is something about i understanding
 # what can i do something here
 认知！
 理智！
+就事论事！
 # 1<2<3 //true
 # 3>2>1 //false
 # 1/0   //Infinity
