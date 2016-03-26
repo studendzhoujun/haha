@@ -75,5 +75,8 @@ TCP的特性是：流式，有连接，复杂，可靠，延迟较大、带宽�
 回调函数的用法
 #junzhouzj.sinaapp.com/ua
 测试网速
-#内嵌
-webview
+#内嵌调试问题
+webview<br/>
+ios----safari浏览器调试<br/>
+android----chrome浏览器调试<br/>
+
