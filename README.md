@@ -73,8 +73,6 @@ UDP的特性是：数据报，无连接，简单，不可靠，会丢包，会�
 TCP的特性是：流式，有连接，复杂，可靠，延迟较大、带宽占用较大<br/>
 #callBack
 回调函数的用法
-#junzhouzj.sinaapp.com/ua
-测试网速
 #内嵌调试问题
 webview<br/>
 ios----safari浏览器调试<br/>
