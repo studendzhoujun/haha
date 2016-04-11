@@ -1,9 +1,4 @@
 # JavaScript
-Here is something about i understanding
-# what can i do something here
-认知！
-理智！
-就事论事！
 # 1<2<3 //true
 # 3>2>1 //false
 # 1/0   //Infinity
@@ -19,12 +14,6 @@ Number 4 Who invented JavaScript?<br/>
 Number 3 What is a JavaScript Library?<br/>
 Number 2 jQuery is still this most important library.<br/>
 Number 1 How to start learning JavaScript?<br/>
-#function
-函数应该要有返回值么<br/>
-function test(){<br/>
-  return test()<br/>
-}
-
 #Chrome调试工具还是很不错的developer.chrome.com
 //好像要翻墙
 #通往成功的道路没有捷径,甚至会有冷嘲热讽,但是你必须相信自己,证明自己
