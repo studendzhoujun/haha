@@ -47,4 +47,8 @@ TCP的特性是：流式，有连接，复杂，可靠，延迟较大、带宽�
 webview<br/>
 ios----safari浏览器调试<br/>
 android----chrome浏览器调试<br/>
-
+#console
+console.log()<br/>
+console.warn()<br/>
+console.error()<br/>
+console.info()<br/>
