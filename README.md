@@ -52,3 +52,5 @@ console.log()<br/>
 console.warn()<br/>
 console.error()<br/>
 console.info()<br/>
+#原型构造组合模式
+fn.prototype.fnName=function(){};
