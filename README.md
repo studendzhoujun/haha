@@ -1,3 +1,4 @@
+![img](https://github.com/studendzhoujun/abc/blob/master/src/images/loading-1.gif)
 # JavaScript
 # 1<2<3 //true
 # 3>2>1 //false
