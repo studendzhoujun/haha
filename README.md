@@ -53,7 +53,5 @@ console.log()<br/>
 console.warn()<br/>
 console.error()<br/>
 console.info()<br/>
-#原型构造组合模式
-fn.prototype.fnName=function(){};
 #正则表达式
-str.replace(/\[[a-z]+\]/,str2)
+###str.replace(/\[[a-z]+\]/,str2)
