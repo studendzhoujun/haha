@@ -54,4 +54,4 @@ console.warn()<br/>
 console.error()<br/>
 console.info()<br/>
 #正则表达式
-###str.replace(/\[[a-z]+\]/,str2)
+
