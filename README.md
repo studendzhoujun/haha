@@ -43,12 +43,11 @@ TCP 传输层<br/>
 TCP/UDP<br/>
 UDP的特性是：数据报，无连接，简单，不可靠，会丢包，会乱序<br/>
 TCP的特性是：流式，有连接，复杂，可靠，延迟较大、带宽占用较大<br/>
-#callBack
-回调函数的用法
+
 #内嵌调试问题
-webview<br/>
-ios----safari浏览器调试<br/>
-android----chrome浏览器调试<br/>
+##webview<br/>
+##ios----safari浏览器调试<br/>
+##android----chrome浏览器调试<br/>
 #console
 console.log()<br/>
 console.warn()<br/>
