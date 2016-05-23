@@ -55,11 +55,11 @@ console.error()<br/>
 console.info()<br/>
 #正则表达式
 #zepto
-######创建一个带有属性的元素
-######$('<p/>',{text:'hello',id:'abc',css:{color:'blue'}}).attr('data','123').appendTo($('div'));
-######设置多个属性
-#######obj.attr({name1:value1,name2:value2,name3:value3});
-######移除属性的另外一种方法
-######obj.attr(name,null)或者obj.removeAttr(name);
-######obj.height();
-######获取的是padding+border+height的高度
+###### 创建一个带有属性的元素
+###### $('<p/>',{text:'hello',id:'abc',css:{color:'blue'}}).attr('data','123').appendTo($('div'));
+###### 设置多个属性
+###### obj.attr({name1:value1,name2:value2,name3:value3});
+###### 移除属性的另外一种方法
+###### obj.attr(name,null)或者obj.removeAttr(name);
+###### obj.height();
+###### 获取的是padding+border+height的高度
