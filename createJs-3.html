@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>createJs-3</title>
+	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+	<script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
+</head>
+<body onload="init();">
+	<canvas id="canvas" width="600" height="300"></canvas>
+</body>
+<script>
+	
+        function init() {
+            var stage=new createjs.Stage('canvas');
+            var circle=new createjs.Shape();
+            var circle2=new createjs.Shape();
+            circle.graphics.beginFill('#f90').drawCircle(0,0,40);
+            circle2.graphics.beginFill('#393').drawCircle(0,0,40);
+            circle.x=circle.y=50;
+            circle2.x=circle2.y=100;
+            stage.addChild(circle);
+            stage.addChild(circle2);
+            stage.update();
+            createjs.Ticker.addEventListener('tick',handclick);
+            function handclick(){
+                circle.x += 10;
+                circle2.x+=5;
+                if (circle.x > stage.canvas.width) { circle.x = 0; }
+                if (circle2.x > stage.canvas.width) { circle2.x = 0; }
+                stage.update();
+            }
+        }
+
+</script>
+</html>
