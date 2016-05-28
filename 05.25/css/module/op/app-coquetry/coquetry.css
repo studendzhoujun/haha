@@ -1,17 +1,17 @@
 body{
-	background: #ffe0e7;
+	background: #edf9ff;
 }
 .coquetry{
 	width:100%;
 	font-family: '微软雅黑';
-	background: #ffe0e7;
+	background: #edf9ff;
 }
 
 
 .Index-imgTab{
 	width:100%;
-	height:10.96rem;
-	background:url(../../../../images/op/app-coquetry/co-top.jpg);
+	height:14.05rem;
+	background:url(../../../../images/op/app-coquetry/bj.png);
 	background-size:100%;
 	position:relative;
 	left:0;
@@ -22,12 +22,25 @@ body{
 	height:1rem;
 	position:absolute;
 	left:1.3rem;
-	top:8.62rem;
+	top:12.72rem;
+}
+.Index-weather{
+	width:100%;
+	height:0.7rem;
+	font-size:0.28rem;
+	line-height:0.7rem;
+	padding-left:1rem;
+	color:#5e8897;
 }
 .Index-shareText{
 	font-size:0.4rem;
 }
-
+.Index-introduce{
+	width:100%;
+	height:6.20rem;
+	background:url(../../../../images/op/app-coquetry/bj1.png);
+	background-size:100%;
+}
 
 .coquetry-box header{
 	height:0.96rem;
@@ -36,7 +49,7 @@ body{
 	text-align: center;
 	font-size: 0.42rem;
 	color:#fff;
-	background:#ff5c87;
+	background:#2db4f7;
 	position: relative;
 }
 .coquetry-box header p{
@@ -74,7 +87,7 @@ body{
 .coquetry-box .coquetry-div{
 	margin:0.24rem 0.13rem 0.36rem 0.13rem;
 	padding:0.35rem 0.1rem 0.1rem 0.1rem;
-	background:#ff7f9d;
+	background:#93dbff;
 	border-radius:0.15rem;
 	height:100%;
 }
@@ -88,11 +101,12 @@ body{
 }
 .coquetry-shop .coquetry-em{
     position:absolute;
-    left:0;
+    left:0.2rem;
     top:0;
-    width:1rem;
-    height:1rem;
-    background:blue;
+    width:0.98rem;
+    height:0.81rem;
+    background:url(../../../../images/op/app-coquetry/iconb.png);
+    background-size:100%;
 }
 .coquetry-box .coquetry-shop img{
     width:3.05rem;
@@ -230,8 +244,8 @@ body{
 }
 .totop{
 	width: 40px;
-    height: 39px;
-    background-image: url(../../../../images/op/app-coquetry/returntop.png?version=1461832073628);
+    height: 40px;
+    background-image: url(../../../../images/op/app-coquetry/returntop2.png);
     background-size: 100%;
     position: fixed;
     bottom: 68px;
