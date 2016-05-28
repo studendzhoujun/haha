@@ -12,8 +12,11 @@
 	<script>
 	  window.onload=function(){
 	  	var oDiv=document.querySelector('#box');
-	  	var oUl=document.querySelector('ul');
+	  	var oUl=document.querySelector('.userList');
+	  	var aLi=oUl.children;
+	  	var len=aLi.length;
 	  	oUl.innerHTML+=oUl.innerHTML;
+	  	console.log(len)
 	  	oUl.style.width='5000px';
 
 	  		var i=1;
