@@ -63,3 +63,5 @@ console.info()<br/>
 ###### obj.attr(name,null)或者obj.removeAttr(name);
 ###### obj.height();
 ###### 获取的是padding+border+height的高度
+#init()
+初始化函数很重要！
