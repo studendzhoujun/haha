@@ -66,5 +66,5 @@ console.info()<br/>
 #init()
 初始化函数很重要！
 #window.
-##W=window.innerWidth;
-##H=window.innerHeight;
+###W=window.innerWidth;
+###H=window.innerHeight;
