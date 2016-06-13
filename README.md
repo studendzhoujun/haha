@@ -68,4 +68,4 @@ console.info()<br/>
 #window.
 ###W=window.innerWidth;
 ###H=window.innerHeight;
-##why
+#document
