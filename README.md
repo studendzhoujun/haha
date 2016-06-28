@@ -67,3 +67,7 @@ console.info()<br/>
 ###W=window.innerWidth;
 ###H=window.innerHeight;
 #H5小游戏框架createjs
+###Easeljs
+###Tweenjs
+###soundjs
+###preloadjs
