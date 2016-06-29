@@ -73,3 +73,7 @@ console.info()<br/>
 ###preloadjs
 #var
 ##通过var声明的变量无法通过delete删除,但是全局变量可以！
+#localStorage
+##localStorage.setItem(name,value)==>设置
+##localStorage.getItem(name)==>value
+##localStorage.clear()==>清数据
