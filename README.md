@@ -71,3 +71,5 @@ console.info()<br/>
 ###Tweenjs
 ###soundjs
 ###preloadjs
+#var
+##通过var声明的变量无法通过delete删除,但是全局变量可以！
