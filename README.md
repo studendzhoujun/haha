@@ -54,15 +54,6 @@ console.warn()<br/>
 console.error()<br/>
 console.info()<br/>
 #正则表达式
-#zepto
-###### 创建一个带有属性的元素
-###### $('<obj/>',{text:'hello',id:'abc',css:{color:'blue'}}).attr('data','123').appendTo($('div'))
-###### 设置多个属性
-###### obj.attr({name1:value1,name2:value2,name3:value3});
-###### 移除属性的另外一种方法
-###### obj.attr(name,null)或者obj.removeAttr(name);
-###### obj.height();
-###### 获取的是padding+border+height的高度
 #window
 ###W=window.innerWidth;
 ###H=window.innerHeight;
@@ -75,5 +66,5 @@ preloadjs<br/>
 ##通过var声明的变量无法通过delete删除,但是全局变量可以！
 #localStorage
 localStorage.setItem(name,value)==>设置<br/>
-localStorage.getItem(name)==>value<br/>
+localStorage.getItem(name)==>获取value<br/>
 localStorage.clear()==>清数据<br/>
