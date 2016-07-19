@@ -71,3 +71,4 @@ localStorage.clear()==>清数据<br/>
 #form表单的提交
 action=“要提交的地址”<br/>
 method="get/post"<br/>
+onsubmit=" return false/true"---阻止提交/提交
