@@ -77,3 +77,4 @@ onsubmit=" return false/true"---阻止提交/提交
 函数嵌套函数<br/>
 函数里面可以访问函数外面的作用域<br/>
 #bind(this)
+#ECMA核心解释器+DOM+BOM
