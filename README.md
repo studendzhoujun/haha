@@ -79,3 +79,4 @@ onsubmit=" return false/true"---阻止提交/提交
 #bind(this)
 #ECMA核心解释器+DOM+BOM
 #函数命名问题
+#git
