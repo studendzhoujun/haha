@@ -80,14 +80,14 @@ onsubmit=" return false/true"---阻止提交/提交
 #ECMA核心解释器+DOM+BOM
 #函数命名问题
 #git常用命令
-git clone<br/>
-git status<br/>
-git add <br/>
-git commit<br/>
-git pull<br/>
-git push<br/>
-git branch<br/>
-git checkout<br/>
-git log<br/>
-git reset<br/>
-git merge<br/>
+git clone 地址<br/>
+git status 状态<br/>
+git add  添加<br/>
+git commit 提交<br/>
+git pull 拉新<br/>
+git push 推送<br/>
+git branch 分支<br/>
+git checkout 切换分支<br/>
+git log 日志<br/>
+git reset 切版本<br/>
+git merge 合并代码<br/>
