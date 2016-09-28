@@ -79,4 +79,15 @@ onsubmit=" return false/true"---阻止提交/提交
 #bind(this)
 #ECMA核心解释器+DOM+BOM
 #函数命名问题
-#git
+#git常用命令
+git clone<br/>
+git status<br/>
+git add <br/>
+git commit<br/>
+git pull<br/>
+git push<br/>
+git branch<br/>
+git checkout<br/>
+git log<br/>
+git reset<br/>
+git merge<br/>
