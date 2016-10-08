@@ -54,6 +54,7 @@ console.warn()<br/>
 console.error()<br/>
 console.info()<br/>
 #正则表达式
+正则表示式也叫规则表达式
 #window
 ###W=window.innerWidth;
 ###H=window.innerHeight;
