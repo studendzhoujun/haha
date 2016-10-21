@@ -60,9 +60,10 @@ preloadjs<br/>
 #var
 ##通过var声明的变量无法通过delete删除,但是全局变量可以！
 #localStorage
-localStorage.setItem(name,value)==>设置<br/>
+`localStorage.setItem(name,value)==>设置<br/>
 localStorage.getItem(name)==>获取value<br/>
 localStorage.clear()==>清数据<br/>
+`
 #form表单的提交
 action=“要提交的地址”<br/>
 method="get/post"<br/>
