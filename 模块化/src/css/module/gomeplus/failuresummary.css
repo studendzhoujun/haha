@@ -1,0 +1,151 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(../../../images/gomeplus/test-md-bg.png) no-repeat;
+  background-size: 100% auto;
+}
+
+.bottom-bg {
+  min-height: 100%;
+  background: url(../../../images/gomeplus/test-bt-bg.png) #f5fcfe no-repeat left bottom;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+.fail-sum-title {
+  width: 3.22rem;
+  height: 0.67rem;
+  background: url(../../../images/gomeplus/fail-sum-title.png) no-repeat;
+  background-size: cover;
+  margin: 0.72rem auto 0.51rem;
+}
+
+.show-share-txt {
+  width: 4.8rem;
+  color: #ee2f2f;
+  font-size: 0.36rem;
+  text-align: center;
+  line-height: 0.48rem;
+  font-weight: bold;
+  margin: 0.45rem auto 0.26rem;
+}
+
+.task-content {
+  width: 6.17rem;
+  height: 7.22rem;
+  background: url(../../../images/gomeplus/fail-sum-bg.png) no-repeat;
+  background-size: cover;
+  margin: 0 auto 0.7rem;
+  padding-top: 0.62rem;
+}
+.task-content p {
+  font-size: 0.3rem;
+  color: #666;
+  margin-top: 0.33rem;
+  margin-left: 0.94rem;
+}
+.task-content .line {
+  width: 4.56rem;
+  height: 1px;
+  background-color: #666;
+  margin: 0.52rem auto 0.56rem;
+}
+.task-content .total-profit {
+  color: #333;
+}
+.task-content .total-profit .red {
+  color: #fa5a5a;
+  font-size: 0.44rem;
+}
+.task-content .edison {
+  overflow: hidden;
+  margin: 1.75rem 0 0 0.46rem;
+}
+.task-content .edison dt {
+  width: 1rem;
+  height: 1rem;
+  background: url(../../../images/gomeplus/edison.png) no-repeat;
+  background-size: cover;
+  float: left;
+}
+.task-content .edison dd {
+  float: left;
+  margin: 0.12rem 0 0 0.24rem;
+  width: 3.92rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+}
+
+.fail-sum-btns {
+  padding-left: 0.05rem;
+  margin-bottom: 0.7rem;
+  overflow: hidden;
+}
+.fail-sum-btns .xin-btn {
+  width: 3.08rem;
+  float: left;
+  margin-left: 0.4rem;
+}
+
+.complete-sum-title {
+  width: 5.7rem;
+  height: 1.42rem;
+  background: url(../../../images/gomeplus/complete-sum-title.png) no-repeat;
+  background-size: cover;
+  margin: 0.72rem auto 0.36rem;
+}
+
+.task-complete {
+  width: 7.27rem;
+  height: 7.72rem;
+  background: url(../../../images/gomeplus/complete-sum-bg.png) no-repeat;
+  background-size: cover;
+  margin: 0 auto 0.35rem;
+  padding-top: 2.54rem;
+}
+.task-complete .medal-name {
+  text-align: center;
+  font-size: 0.34rem;
+  font-weight: bold;
+  width: 2.7rem;
+  margin: 0 auto;
+  height: .38rem;
+  line-height: .38rem;
+  overflow: hidden;
+ /* text-overflow: ellipsis;*/
+  overflow: hidden;
+  white-space: nowrap;
+}
+.task-complete .medal-content {
+  width: 3.83rem;
+  font-size: 0.3rem;
+  line-height: 0.42rem;
+  margin: 0.15rem auto 0;
+  text-indent: 0.6rem;
+  height: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.task-complete .medal-time {
+  text-align: center;
+  font-size: 0.24rem;
+  margin-top: 0.15rem;
+}
+
+.show-txt {
+  color: #ee2f2f;
+  font-size: 0.36rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.56rem;
+}
+
+.show-share-btns {
+  width: 5.18rem;
+  margin: 0.2rem auto 0.7rem;
+}

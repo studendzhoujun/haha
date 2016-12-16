@@ -1,0 +1,93 @@
+/*赛龙舟活动首页*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	height: 100%;
+	background: #dcefea;
+}
+.opg-boat{
+	width: 100%;
+	min-height: 100%;
+	background: url(../../../../images/op/app-boat/table-back.jpg)center center no-repeat;
+	background-size: 100%;
+}
+
+.data-table{
+	position: absolute;
+	/*float: left;*/
+	width: 100%;
+	height: 100%;
+}
+
+.table-body ul li{
+	font-size: 0.28rem;
+}
+
+.table-header{
+	width: 100%;
+	height: 0.68rem;
+	margin-top: 0.2rem;
+	line-height: 0.68rem;
+	clear: both;
+	overflow: hidden;
+}
+
+.table-header div a{
+	font-size: 0.36rem;
+	display: block;
+	padding-left: 0.26rem;
+	padding-right: 0.26rem;
+}
+
+.hxjl-title-box{
+	width: 50%;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+}
+
+.top-title-box{
+	width: 50%;
+	float: right;
+	font-weight: bold;
+	text-align: center;
+}
+
+.tab-active{
+	color: #ee2f2f;
+	border-bottom: solid 0.02rem #ee2f2f;
+	width: 2rem;
+	margin: 0 auto;
+}
+
+.table-body{
+	width: 100%;
+	font-size: 0.28rem;
+	clear: both;
+	overflow: hidden;
+	margin-top: 0.3rem;
+}
+
+.table-body tr th{
+	width: 33.33%;
+	text-align: center;
+	font-size: 0.28rem;
+	line-height: 0.58rem;
+}
+
+.table-body tr td{
+	width: 33.33%;
+	text-align: center;
+	font-size: 0.24rem;
+	line-height: 0.54rem;
+	color: #6d7d7e;
+}
+
+.table-footer{
+	font-size: 0.3rem;
+	margin-top: 1.8rem;
+	text-align: center;
+}

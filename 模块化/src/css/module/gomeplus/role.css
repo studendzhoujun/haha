@@ -1,0 +1,30 @@
+.plus-stage {
+  width: 100%;
+  height: 9.97rem;
+  background: url(../../../images/gomeplus/stage.png) no-repeat;
+  background-size: cover;
+}
+.plus-stage .role-para {
+  text-align: center;
+  font-size: 0.3rem;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 2.5rem;
+}
+.plus-stage .role-para strong {
+  font-size: 0.36rem;
+  color: #ee2f2f;
+}
+.plus-stage .your-role {
+  width: 5.47rem;
+  height: 4.59rem;
+  margin: 0.3rem auto 0;
+}
+
+.btn-click {
+  display: block;
+  padding: 0.1rem;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #368fdb;
+}

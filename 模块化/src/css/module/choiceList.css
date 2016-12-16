@@ -1,0 +1,23 @@
+
+.mshop-choicelist .opg-grld-searchBtnP{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#666;
+	text-align:center;
+}
+.mshop-choicelist .opg-grld-searchBtnP a{
+	color:#ccc;
+}
+.mshop-choicelist .opg-grld-searchBtnPL{
+	width:30%;
+	border-right:1px solid #fff;
+		box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+.mshop-choicelist .opg-grld-searchBtnPR{
+	width:70%;
+}

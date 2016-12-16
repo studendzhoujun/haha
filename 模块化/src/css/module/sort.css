@@ -1,0 +1,88 @@
+.manage-btn .manage-a-bgman{
+      background: url(../../images/mshop-man-pro.png) no-repeat 0.7rem center #f9f9f9;
+      background-size: 10%;
+}
+
+.manage-btn .manage-a-disable {
+    background-image: url(../../images/mshop-man-disable.png);
+    background-size: 10%;
+    color: #cdcdcd;
+}
+
+.manage-btn .manage-a-bgadd{
+    background: url(../../images/mshop-add-pro.png) no-repeat 0.7rem center #f9f9f9;
+    background-size:10%;
+}
+
+.manage-btn span{
+      display: inline-block;
+      width:1px;
+      height: 0.42rem;  
+      background:#e4e4e4;   
+    position:absolute;
+    left:47%;
+    top:0.3rem;
+}
+
+.mshop-sortDetail .sort-list li{
+	padding:10px;
+	border-bottom: 1px solid #cdcdcd;
+}
+.mshop-sortDetail .sort-list li p{
+	line-height: 20px;
+}
+
+.mshop-sortDetail dl dd .mshop-sortDetail-price{
+      font-size: 0.28rem;
+      color:#ee2f2f;
+      font-family: '微软雅黑';
+}
+
+.mshop-sortDetail dl dd .mshop-sortDetail-yongjin{
+      margin-left: 0;
+      width:0.6rem;
+      height:0.3rem;
+      display: inline-block;
+      color:#fff;
+      background: #fa5a5a;
+      border-radius: 6px;
+      font-size: 0.18rem;
+      line-height: 0.3rem;
+      text-align: center;
+}
+.mshop-sortDetail dl dd .mshop-sortDetail-prices{
+      font-size: 0.2rem;
+      color:#ee2f2f;
+}   
+
+.mshop-sortDetail .common-pro-btn li em{
+  display: inline-block;
+  width:1px;
+  height:0.2rem;
+  background:#e4e4e4;
+  margin-left: 0.33rem;
+}
+
+   
+.sortDetail-box_tab{width:100%;height:30px;background:#ccc;overflow:hidden;}
+.on{color:red;}
+.sortDetail-box_tab li{width:100px;height:100%;float:left;text-align:center;}
+.sortDetail-shoping1{width:100%;height:150px;border-top:1px solid #ccc;margin:10px 0;}
+.sortDetail-shop_top{width:100%;height:100px;overflow:hidden;}
+.sortDetail-shop_left{width:80px;height:80px;float:left;}
+.sortDetail-shop_right{width:200px;height:100px;float:right;background:#eee;}
+.sortDetail-shop_bottom{overflow:hidden;border-top:1px solid #ccc;padding-top:10px;}
+.sortDetail-shop_bottom ul li{width:75px;height:50px;float:left;}
+.sortDetail-shop_bottom ul span{display:block;width:20px;height:20px;background:#ccc;margin-left:20px;text-align:center;}
+.sortDetail-shop_bottom a{float:left;width:25%;height:30px;text-align:center;line-height:30px;text-decoration: none;}
+.sortDetail-shoping_btn{width:100%;height:50px;}
+.sortDetail-shoping_btn a{width:150px;height:50px;background:#eee;float:left;text-align:center;line-height:50px;text-decoration:none;}
+.sortDetail-shoping2{width:100%;height:150px;border-top:1px solid #ccc;margin:10px 0;}
+.sortDetail-classtify{width:100%;height:80px;border-bottom:1px solid #ccc;}
+.sortDetail-classtify p{margin:10px;}
+.sortDetail-shoping{display:none;}
+.sortDetail-shopover{display:none;}
+.sortDetail-shoplist{display:none;}
+.sortDetail-noshop{width:250px;height:200px;background:#ccc;margin:10px;}
+
+.common-prolist{display: none;}

@@ -1,0 +1,160 @@
+li{
+	list-style:none;
+}
+body{background:#ed494a;}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	display: block;
+	content:'';
+	clear:both;
+}
+.m-invitation .m-part_o header{
+	width:100%;
+	height:4rem;
+	background:url(../../images/m-invitation/part2.png?t=201603291404) no-repeat left center;
+	background-size:100%;
+}
+.m-invitation  .m-part_t{
+	width:100%;
+	height:8.6rem;
+	background:#ed494a;
+	position: relative;
+	left:0;
+	top:0;
+}
+.m-invitation  .m-part_t .m-title{
+	width:100%;
+	height:0.82rem;
+	background:url(../../images/m-invitation/t1.jpg) no-repeat left center;
+	background-size:100%;	
+}
+.m-invitation  .m-part_t .m-conbox{
+	width:94%;
+	height:7.8rem;
+	border:2px solid #f8ef00;
+	padding: 0 0.05%;
+	border-radius: 26px;
+	position: absolute;
+	left:50%;
+	margin-left: -47%;	
+	background:#e53c3d;
+}
+.m-part_t .m-conbox .m-invitation-ewm{
+	width:100%; 
+	text-align:center;
+	margin-top: 0.3rem;
+}
+.m-conbox .m-invitation-ewm img{
+	width:5rem;
+	height:5rem;
+}
+.m-part_t .m-conbox p{	
+	width:100%;
+	font-size:0.26rem;
+	text-align: center;
+	color:#ffead5;	
+	font-family:'微软雅黑';
+	margin-top: 0.18rem;
+}
+.m-part_t .m-conbox .m-shareul{
+	margin-top:0.3rem;
+	margin-left: 0.2rem;
+}
+.m-part_t .m-conbox .m-shareul li{
+	/*font-weight: bold;*/
+	width:1.24rem;
+	height:0.5rem;
+	float: left;
+	font-size:0.25rem;
+	color:#ffead5;
+	text-align: center;
+	padding-top:1.1rem;	
+	font-family:'SourceHanSansCN Normal';
+}
+.mrl16{margin-left:0.16rem;}
+.liwx{
+	background: url(../../images/m-inviting/b_weixin.png) no-repeat center top;
+	background-size:80%;
+}
+.lipyq{
+	background:url(../../images/m-invitation/b_pyq.png) no-repeat center top;
+	background-size:80%;
+}	
+.liqq{
+	background:url(../../images/m-invitation/b_qq.png) no-repeat center top;
+	background-size:80%;
+}
+.lizone{
+	background:url(../../images/m-invitation/b_qqzone.png) no-repeat center top;
+	background-size:80%;
+}
+.liwb{
+	background:url(../../images/m-invitation/b_weibo.png) no-repeat center top;
+	background-size:80%;
+}
+.m-invitation  .m-part_th header{
+	width:100%;
+	height:0.9rem;
+	background:url(../../images/m-invitation/t3.jpg) no-repeat left center; 
+	background-size:100%;
+}
+.m-invitation  .m-part_th  .m-conreward{
+	width:94%;
+	height:2.5rem;
+	border:2px solid #f8ef00;
+	border-radius:26px;
+	position: absolute;
+	left:50%;
+	margin-left: -47%;
+	background:#e53c3d;	
+}
+.m-part_th .m-conreward p{
+	width:100%;
+	height:0.7rem;
+	margin-top:0.4rem;
+}
+.m-part_th .m-conreward .m-danbi{
+	background:url(../../images/m-invitation/wrd1.png) no-repeat center center;
+	background-size:86%;
+}
+.m-part_th .m-conreward .m-changqi{
+	background:url(../../images/m-invitation/wrd2.png) no-repeat center center;
+	background-size:86%;
+}
+
+/*2016-3-24*/
+.txt-tip,.m-conreward{
+	text-align: center;
+}
+.m-conreward img{
+	margin-top:0.25rem;
+}
+.txt-tip img,.m-conreward img{
+	width:90%;
+	height:auto;
+}
+.m-invitation .m-part_t{
+	height:11.6rem;
+}
+.m-invitation .m-part_t .m-conbox{
+	height:10.4rem;
+}
+.m-invitation  .m-part_th{
+	height:2.4rem;
+}
+.m-invitation .m-part_th .m-conreward{
+	height:1.2rem;
+}
+.m-part_t .m-conbox .m-img{
+	width:4rem;
+	height:4rem;
+	margin:0.4rem auto 0;
+}
+.m-invitation-ewm .txt-tip img{
+	width:6.5rem;
+	height:2.29rem;
+	background-size:100%;
+	margin-top:0.34rem;
+}

@@ -1,0 +1,229 @@
+body {
+  padding-bottom: 0.4rem;
+}
+
+.test-title {
+  font-size: 0.32rem;
+  color: #333;
+  text-align: center;
+  margin-top: 0.59rem;
+}
+
+.product-list {
+  height: 8.76rem;
+  margin-top: 0.58rem;
+  position: relative;
+}
+.product-list a {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #666;
+}
+
+.w182 {
+  width: 1.82rem;
+  height: 1.82rem;
+  line-height: 1.82rem;
+}
+
+.w148 {
+  width: 1.48rem;
+  height: 1.48rem;
+  line-height: 1.48rem;
+}
+
+.w135 {
+  width: 1.35rem;
+  height: 1.35rem;
+  line-height: 1.35rem;
+}
+
+.w131 {
+  width: 1.31rem;
+  height: 1.31rem;
+  line-height: 1.31rem;
+}
+
+.w141 {
+  width: 1.41rem;
+  height: 1.41rem;
+  line-height: 1.41rem;
+}
+
+.w146 {
+  width: 1.46rem;
+  height: 1.46rem;
+  line-height: 1.46rem;
+}
+
+.w162 {
+  width: 1.62rem;
+  height: 1.62rem;
+  line-height: 1.62rem;
+}
+
+.w155 {
+  width: 1.55rem;
+  height: 1.55rem;
+  line-height: 1.55rem;
+}
+
+.green {
+  background-color: #b4feb4;
+}
+
+.fdd6f7 {
+  background-color: #fdd6f7;
+}
+
+.afd6fb {
+  background-color: #afd6fb;
+}
+
+.fir-one {
+  top: 0;
+  left: 0.69rem;
+}
+
+.fir-two {
+  top: 0.55rem;
+  left: 2.7rem;
+  background-color: #b6dafc;
+}
+
+.fir-three {
+  top: 0.17rem;
+  left: 4.17rem;
+  background-color: #b5fdf8;
+}
+
+.fir-four {
+  top: 0.99rem;
+  left: 5.54rem;
+  background-color: #aaeffe;
+}
+
+.sec-one {
+  top: 1.78rem;
+  left: 0.34rem;
+  background-color: #ead2fc;
+}
+
+.sec-two {
+  top: 1.63rem;
+  left: 1.72rem;
+  background-color: #fef3ac;
+}
+
+.sec-three {
+  top: 2.2rem;
+  left: 3.08rem;
+  background-color: #e8fcb1;
+}
+
+.sec-four {
+  top: 1.67rem;
+  left: 4.33rem;
+  background-color: #dec2fc;
+}
+
+.third-one {
+  top: 3.16rem;
+  left: 0.37rem;
+  background-color: #b9f0fc;
+}
+
+.third-two {
+  top: 3.04rem;
+  left: 1.97rem;
+  background-color: #fedfd7;
+}
+
+.third-three {
+  top: 3.16rem;
+  left: 4.01rem;
+  width: 1.59rem;
+  height: 1.59rem;
+  line-height: 1.59rem;
+  background-color: #fbefa5;
+}
+
+.third-four {
+  top: 2.54rem;
+  left: 5.47rem;
+  width: 1.38rem;
+  height: 1.38rem;
+  line-height: 1.38rem;
+}
+
+.fourth-one {
+  top: 4.44rem;
+  left: 1.16rem;
+  background-color: #e5cefd;
+}
+
+.fourth-two {
+  top: 4.15rem;
+  left: 2.58rem;
+  z-index: 2;
+}
+
+.fourth-three {
+  top: 4.62rem;
+  left: 4.87rem;
+  background-color: #ffb7c6;
+}
+
+.fifth-one {
+  top: 5.57rem;
+  left: 0.26rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.fifth-two {
+  top: 5.64rem;
+  left: 1.76rem;
+  background-color: #e1fd96;
+  z-index: 1;
+}
+
+.fifth-three {
+  top: 5.74rem;
+  left: 3.64rem;
+}
+
+.sixth-one {
+  top: 7.11rem;
+  left: 0.95rem;
+  background-color: #fbed93;
+}
+
+.sixth-two {
+  top: 7.02rem;
+  left: 2.64rem;
+  width: 1.73rem;
+  height: 1.73rem;
+  line-height: 1.73rem;
+  background-color: #acfdf7;
+}
+
+.sixth-three {
+  top: 6.82rem;
+  left: 4.68rem;
+}
+
+.product-list a.active {
+  color: #fff;
+  font-weight: bold;
+  background-color: #ee2f2f;
+}
+
+.xin-btn {
+  width: 5.18rem;
+  margin: 0.45rem auto;
+}

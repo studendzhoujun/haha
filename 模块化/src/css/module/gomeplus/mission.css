@@ -1,0 +1,100 @@
+html, body {
+  min-height: 100%;
+  height: auto  !important;
+  background-color: #afe0f3;
+}
+
+.mission-body {
+  background-color: #afe0f3;
+  padding: 1px;
+  height: 100%;
+}
+
+.mission-list {
+  position: relative;
+  width: 7.5rem;
+  margin: 1.45rem 0 1rem;
+  background: url(../../../images/gomeplus/mission-bg.png);
+  background-size: 100% auto;
+  padding: 0 0.42rem 0.2rem 0.56rem;
+}
+.mission-list .mis-item {
+  margin: 0 0 0.36rem 0;
+}
+.mission-list .mis-cell {
+  position: relative;
+  width: 6.49rem;
+  height: 1.71rem;
+  padding: 0.24rem 0.32rem;
+  background: url(../../../images/gomeplus/zone-bg.png) no-repeat;
+  background-size: cover;
+}
+.mission-list .mis-cell .thrust {
+  width: 1.36rem;
+  height: 1.26rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.5rem;
+}
+.mission-list .mis-cell .thrust.failed {
+  background: url(../../../images/gomeplus/mis-failed.png) no-repeat;
+  background-size: cover;
+}
+.mission-list .mis-cell .thrust.thrust-succ {
+  background: url(../../../images/gomeplus/mis-succ.png) no-repeat;
+  background-size: cover;
+}
+.mission-list .mis-time {
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 0.45rem;
+  font-size: 0.24rem;
+}
+.mission-list .mis-title {
+  height: 0.38rem;
+  width: 2.2rem;
+  text-indent: -1000rem;
+  overflow: hidden;
+}
+.mission-list .mis-title.invite-shop {
+  background: url(../../../images/gomeplus/invite-shop.png) no-repeat;
+  background-size: cover;
+}
+.mission-list .mis-title.title-share {
+  background: url(../../../images/gomeplus/title-share.png) no-repeat;
+  background-size: cover;
+}
+.mission-list .mis-title.title-share02 {
+  background: url(../../../images/gomeplus/title-share02.png) no-repeat;
+  background-size: cover;
+}
+.mission-list .mis-title.invite-person {
+  background: url(../../../images/gomeplus/invite-person.png) no-repeat;
+  background-size: cover;
+}
+.mission-list .mis-para {
+  font-size: 0.24rem;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 0.08rem;
+}
+.mission-list:before {
+  content: '';
+  position: absolute;
+  top: -1.54rem;
+  left: 0;
+  width: 7.5rem;
+  height: 1.54rem;
+  background: url(../../../images/gomeplus/mission-top.png) no-repeat;
+  background-size: 7.5rem 1.54rem;
+}
+.mission-list:after {
+  content: '';
+  position: absolute;
+  bottom: -1.55rem;
+  left: 0;
+  width: 7.5rem;
+  height: 1.55rem;
+  background: url(../../../images/gomeplus/mission-bt.png) no-repeat;
+  background-size: 7.5rem 1.55rem;
+}

@@ -1,0 +1,75 @@
+html {
+  height: 100%;
+}
+
+.task-bg {
+  width: 100%;
+  height: 100%;
+  background: url(../../../images/gomeplus/task-bg.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 1.08rem;
+}
+
+.task-guide-bg {
+  width: 5.87rem;
+  height: 7.83rem;
+  background: url(../../../images/gomeplus/task-guide-bg.png) no-repeat;
+  background-size: cover;
+  margin: 0.6rem auto 0;
+  overflow: hidden;
+}
+.task-guide-bg .newbie-sell-pic {
+  display: block;
+  width: 3.9rem;
+  height: 3.31rem;
+  background: url(../../../images/gomeplus/newbieguidesell.png) no-repeat;
+  background-size: cover;
+  margin: 0.87rem auto 0.32rem;
+}
+.task-guide-bg .newbie-sell-txt {
+  text-align: center;
+  margin-bottom: 0.44rem;
+}
+.task-guide-bg .newbie-sell-txt span {
+  display: block;
+  font-size: 0.28rem;
+  color: #f85360;
+}
+.task-guide-bg .newbie-sell-txt .big {
+  font-size: 0.36rem;
+  font-weight: bold;
+  margin: 0.13rem 0 0.2rem;
+}
+.task-guide-bg .xin-btn {
+  width: 3.08rem;
+  margin: 0 auto;
+}
+.task-guide-bg .newbie-shop-pic {
+  display: block;
+  width: 3.25rem;
+  height: 3.32rem;
+  background: url(../../../images/gomeplus/newbieguideshop.png) no-repeat;
+  background-size: cover;
+  margin: 0.97rem auto 0.28rem;
+}
+.task-guide-bg .newbie-shop-txt {
+  text-align: center;
+  margin-bottom: 0.22rem;
+}
+.task-guide-bg .newbie-shop-txt span {
+  display: block;
+  font-size: 0.28rem;
+  color: #f99b1c;
+  padding: 0.1rem 0 0.05rem;
+}
+.task-guide-bg .newbie-shop-txt .big {
+  font-size: 0.32rem;
+  font-weight: bold;
+  padding-top: 0.05rem;
+}
+.task-guide-bg .newbie-shop-txt .big em {
+  line-height: 1;
+  font-style: normal;
+  vertical-align: -0.02rem;
+  font-size: 0.48rem;
+}

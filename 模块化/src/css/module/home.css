@@ -1,0 +1,220 @@
+.myHome-mess{
+	width:100%;
+	height:2.2rem;
+	overflow: hidden;
+	position:relative;
+	/* background:-webkit-linear-gradient(left,#f3a96c,#b73745,#534073); */
+}
+/* .myHome-mess .myHome-background{
+	display:none;
+} */
+.myHome-messl{
+	width:1rem;
+	height:1rem;
+	background:#fff;
+	float:left;
+	margin:0.6rem 0.3rem 0.6rem 0.2rem;
+	overflow: hidden;
+	position: relative;
+}
+.myHome-messl img{
+	width:100%;
+	height:auto;
+	/*opacity: 0;*/
+}
+.myHome-messr{
+	float:left;
+	margin-top:0.6rem;
+	width: 5rem;
+}
+.myHome-messr h3{
+	font-size:0.32rem;
+	color:#FEFEFE;
+	margin-bottom:0.1rem;
+	font-family:'微软雅黑';
+}
+.myHome-messr .p1{
+	font-size:0.24rem;
+	color:#FFFFFF;
+	margin-bottom:0.1rem;
+	font-family:'微软雅黑';
+}
+.myHome-messr .p2{
+	float:left;
+	font-size:0.24rem;
+	color:#FEFEFE;
+	font-family:'微软雅黑';
+}
+.myHome-messr .p3{
+	float:left;
+	font-size:0.24rem;
+	color:#FEFEFE;
+	margin-left:0.46rem;
+	font-family:'微软雅黑';
+}
+
+
+.myHome-nav{
+	width:100%;
+	height:0.84rem;
+	background:#fff;
+	position:relative;
+	border-bottom: 1px solid #E4E4E4;
+}
+.myHome-nav .nav-grip{
+	position:absolute;
+	background:#E4E4E4;
+	width:1px;
+	height:0.28rem;
+	margin-top:0.33rem;
+}
+.myHome-nav .nav-grip2{
+	position:absolute;
+	background:#E4E4E4;
+	width:1px;
+	height:0.28rem;
+	margin-top:0.33rem;
+}
+.myHome-nav a{
+	float:left;
+	width:2.49rem;
+	height:0.84rem;
+	padding-left:1.0rem;
+	padding-top:0.28rem;
+	font-size:0.26rem;
+	color:#666666;
+}
+.myHome-nav .nav-shoplook{
+	background:url(../../images/homeshop.png) no-repeat 0.57rem 0.27rem;
+	background-size:0.34rem;
+}
+.myHome-nav .nav-shopurl{
+	background:url(../../images/homeurl.png) no-repeat 0.57rem 0.27rem;
+	background-size:0.34rem;
+}
+.myHome-nav .nav-shopshare{
+	background:url(../../images/homeshare.png) no-repeat 0.57rem 0.27rem;
+	background-size:0.34rem;
+}
+.myHome-shopBtn{
+	width:100%;
+	height:4.59rem;
+	margin-top:0.18rem;
+	/* border-bottom:0.01rem solid #e4e4e4;
+	border-top:0.01rem solid #e4e4e4; */
+}
+.myHome-shopBtn a{
+	width:2.49rem;
+	height:2.28rem;
+	float:left;
+	font-size:0.28rem;
+	background-size:0.6rem;
+	position:relative;
+	background:#fff;
+
+}
+.myHome-shopBtn p{
+	color:#333333;
+}
+.myHome-shopBtn .shopBtn-grip1{
+	border-right:1px solid #e4e4e4;
+	border-top:1px solid #e4e4e4;
+}
+.myHome-shopBtn .shopBtn-grip2{
+	border-top:1px solid #e4e4e4;
+	/* border-bottom:1px solid #e4e4e4; */
+}
+.myHome-shopBtn .shopBtn-grip3{
+	border-right:1px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;
+	border-top:1px solid #e4e4e4;
+}
+.myHome-shopBtn .shopBtn-grip4{
+	border-bottom:1px solid #e4e4e4;
+	border-top:1px solid #e4e4e4;
+}
+.myHome-shopBtn .shopBtn-back1{
+	background:#fff url(../../images/homemanage.png) no-repeat 0.95rem 0.55rem;
+	background-size:0.6rem;
+}
+.myHome-shopBtn .shopBtn-back2{
+	background:#fff url(../../images/homeorder.png) no-repeat 0.95rem 0.55rem;
+	background-size:0.6rem;
+}
+.myHome-shopBtn .shopBtn-back3{
+	background:#fff url(../../images/homedate.png) no-repeat 0.95rem 0.55rem;
+	background-size:0.6rem;
+}
+.myHome-shopBtn .shopBtn-back4{
+	background:#fff url(../../images/homesett.png) no-repeat 0.95rem 0.55rem;
+	background-size:0.6rem;
+}
+.myHome-shopBtn .shopBtn-text{
+      position:absolute;
+      left:0.69rem;
+      top:1.36rem;
+}
+.myHome-shopBtn .shopBtn-back2 .shopBtn-text2, .myHome-shopBtn .shopBtn-back1 .shopBtn-text2{
+	position: absolute;
+	bottom: 0.2rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.22rem;
+	color: #999;
+}
+.myHome-shopBtn .shopBtn-text2 span, .myHome-shopBtn .shopBtn-text1 span{
+	color:#ee2f2f;
+}
+.myHome-mess .myHome-background{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+
+.opg a.xin-btn-primary {
+    background-color: #ee2f2f;
+    color: #FFF;
+}
+.opg a.xin-btn {
+    border-radius: 3px;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    display: block;
+    color: #FFF;
+    font-size: 0.32rem;
+}
+
+.opg .xin-btn-box {
+	padding: 0.2rem;
+}
+
+.new-relative {
+	position: relative;
+
+}
+
+.look-store-btn {
+	top: 1.43rem;
+	right: 0.2rem;
+	position: absolute;
+  display: block;
+  width: 1.44rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  background: #fa5a5a;
+  font-size: 0.24rem; }
+  .look-store-btn .icon-look-store {
+    display: inline-block;
+    width: 0.27rem;
+    height: 0.24rem;
+    vertical-align: middle;
+    background: url(../../images/icon-look.png) no-repeat;
+    background-size: 100% auto;
+}

@@ -1,0 +1,267 @@
+body{
+    background: #faeddb;
+}
+.clearfix{
+    zoom:1;
+}
+.clearfix:after{
+    display: block;
+    content:'';
+    clear:both;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.coupon-btn{
+	display: block;
+	width: 3.49rem;
+	height:0.88rem;
+	line-height: 0.86rem;
+	background: #e41b0e;
+	background-size: 100%;
+	font-size:0.42rem;
+	font-weight: bold;
+	color: #fff;
+	line-height: 0.88rem;
+	text-align: center;
+	margin: 0.26rem auto 0.70rem auto;
+	border-radius: 0.3rem; 
+	box-shadow: inset 0 -0.02rem 0 #e41b0e,0 0.11rem 0 #9a0e0e,0.02rem 0.14rem 0.06rem rgba(0,0,0,0.5);
+}
+.coupon-btn:active{
+	color: #ecabaa;
+}
+a.disabled{
+	color: #f16c6d;
+}
+a.disabled:active{
+	color: #f16c6d;
+}
+/*-------------------顶部图片--------------------*/
+.coupon .coupon-topimg{
+	width: 7.50rem;
+	height: 5.6rem;
+	background: url(../../images/app-coupon/coupon-top.png) no-repeat;
+	background-size: 100%;
+}
+/*-------------------顶部图片结束--------------------*/
+
+/*-------------------手机号领取优惠券--------------------*/
+.coupon .coupon-Receive_coupon .coupon-input{
+	width: 5.96rem;
+	height: 1.76rem;
+	border: 2px solid #fa5a5a;
+	border-radius: 0.16rem;
+	background: #fff;
+	margin: 0 0.76rem;
+	overflow: hidden;
+	position: relative;
+}
+.coupon .coupon-Receive_coupon .coupon-input input{
+	width: 5.60rem;
+	height: 0.84rem;
+	background: none;
+	margin: 0 0.16rem;
+	padding: 0 5px;
+	font-size: 0.29rem;
+	line-height: 0.84rem;
+	display: block;
+}
+.coupon .coupon-Receive_coupon .coupon-input input[name="phone"]{
+	border-bottom: 1px solid #e4e4e4;
+}
+.coupon .coupon-Receive_coupon .coupon-input input[name="verify"]{
+	width: 3.2rem;
+	position: absolute;
+	bottom: 0;
+}
+.coupon .coupon-Receive_coupon .coupon-input a.coupon-verify{
+	display: inline-block;
+	width: 2.56rem;
+	text-align: center;
+	font-size: 0.29rem;
+	color: #fa5a5a;
+	height: 0.84rem;
+	line-height: 0.84rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/*-------------------手机号领取优惠券结束--------------------*/
+
+/*-------------------领取到优惠券--------------------*/
+.coupon-Received_coupon {
+	/*display: none;*/
+}
+.coupon .coupon-Received_coupon>div{
+	width: 6.2rem;
+	height: 1.90rem;
+	background: url(../../images/app-coupon/coupon.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto 0.15rem auto;
+}
+.coupon-Received_coupon .ruleP{
+	width:3.6rem;
+	margin:1.1rem 0 0 0.3rem;
+	float:left;
+	font-size:0.28rem;
+	color:#ede5bf;
+}
+.coupon .coupon-Received_coupon>div span{
+	display: inline-block;
+	width: 2.1rem;
+	height: 1.90rem;
+	line-height: 1.90rem;
+	text-align: center;
+	font-size: 0.58rem;
+	color: #fff;
+	float: right;
+}
+.coupon .coupon-Received_coupon>div span i{
+	font-size: 0.26rem;
+	position: relative;
+	top: -0.25rem;
+}
+.coupon .coupon-Received_coupon>p{
+	width: 6.2rem;
+	font-size: 0.26rem;
+	color: #666;
+	line-height: 0.36rem;
+	margin: 0 auto;
+}
+.coupon .coupon-Received_coupon>p span{
+	color: #e81f0a;
+}
+.coupon .coupon-Received_coupon>p:nth-of-type(2){
+	margin-bottom: .4rem;
+}
+/*-------------------领取到优惠券结束--------------------*/
+
+/*-------------------优惠券领完--------------------*/
+.coupon .coupon-no{
+	width:6.2rem;
+	height: 1.9rem;
+	line-height: 1.9rem;
+	text-align: center;
+	margin:0 auto 0.5rem auto;
+	background: url(../../images/app-coupon/coupon-no.jpg) 0 0 / cover;
+	color: #fff;
+	font-size: .48rem;
+	/*display: none;*/
+}
+.coupon .coupon-no img{
+	width:6.2rem;
+	height: 1.90rem;
+}
+/*-------------------优惠券领完结束--------------------*/
+
+/*-------------------活动规则--------------------*/
+.coupon .coupon-rule{
+	width: 6.86rem;
+	margin: 0.7rem auto .4rem;
+	border: 1px solid #fa5a5a;
+	border-radius: 0.16rem;
+}
+.coupon .coupon-rule header h2{
+	width: 2.4rem;
+	margin: 0 auto;
+	font-size: 0.33rem;
+	color: #fa5a5a;
+	text-align: center;
+	margin-top: -0.26rem;
+	background: #faeddb;
+	font-weight: bold;
+}
+.coupon .coupon-rule ul{
+	padding: 0.35rem 0.34rem 0.2rem 0.34rem;
+}
+.coupon .coupon-rule ul li{
+	font-size: 0.28rem;
+	line-height: 0.4rem;
+	margin-bottom: 0.2rem;
+	padding-left: 0.38rem;
+	color: #666;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+.coupon .coupon-rule ul li span{
+	margin-left: -0.38rem;
+	margin-right: 0.05rem;
+}
+/*-------------------活动规则结束--------------------*/
+
+/*-------------------看看朋友手气--------------------*/
+.coupon .coupon-luck{
+	width: 100%;
+	padding:0.5rem 0 0.2rem 0;
+	background: #fff;
+}
+.coupon .coupon-luck div header h2{
+	width: 3.5rem;
+	background: #fff;
+	font-size: 0.33rem;
+	font-weight: bold;
+	color: #fa5a5a;
+	margin: 0 auto;
+	margin-top: -0.22rem;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+.coupon .coupon-luck>div{
+	width: 6.86rem;
+	margin: 0 auto;
+	border-top: 2px solid #fa5a5a;
+	background: #fff;
+}
+.coupon .coupon-luck figure{
+	height: 1.23rem;
+	margin-bottom: 0.3rem;
+}
+.coupon .coupon-luck figure div{
+	float: left;
+}
+.coupon .coupon-luck figure div img{
+	width: 1rem;
+	height: 1rem;
+}
+.coupon .coupon-luck figure figcaption{
+	width: 5.66rem;
+	color: #222;
+	font-size: 0.29rem;
+	line-height: 0.5rem;
+	margin-left: 0.2rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #ececec;
+	float: left;
+}
+.coupon .coupon-luck figure figcaption h4 span{
+	color: #999;
+	float: right;
+}
+.coupon .coupon-luck figure figcaption p{
+	color: #999999;
+	font-size: 0.26rem;
+}
+.coupon .coupon-luck figure figcaption p span{
+	color: #fa5a5a;
+	font-size: 0.38rem;
+	float: right;
+}
+.coupon .coupon-luck figure figcaption p span i{
+	font-size: 0.26rem;
+}
+
+/*-------------------看看朋友手气结束--------------------*/
+
+/*-------------------广告栏--------------------*/
+.coupon .coupon-ad img{
+	width: 7.5rem;
+	height: 2.56rem;
+}
+/*-------------------广告栏结束--------------------*/
+
+
+/*领取失败隐藏*/
+.coupon-no{
+	display: none;
+}

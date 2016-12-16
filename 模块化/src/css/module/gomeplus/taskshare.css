@@ -1,0 +1,116 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+}
+
+.task-bg {
+  width: 100%;
+  height: 100%;
+  background: url(../../../images/gomeplus/task-bg.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 1.08rem;
+}
+
+.content {
+  width: 7.5rem;
+  height: 7.85rem;
+  padding-top: 2.56rem;
+  margin: 0 auto 0.18rem;
+  background: url(../../../images/gomeplus/task-content-bg.png) no-repeat;
+  background-size: cover;
+}
+.content h2 span, .content h3 span {
+  color: #fff;
+  text-shadow: 0.04rem 0.04rem 0.03rem #b13f3f;
+}
+.content h2 {
+  position: relative;
+  height: 0.47rem;
+  line-height: 0.4rem;
+}
+.content h2 span {
+  position: absolute;
+  top: 0.02rem;
+  font-size: 0.5rem;
+  width: 0.56rem;
+  text-align: center;
+}
+.content h2 span:nth-chid(1) {
+  left: 0;
+}
+.content .task-share-txt {
+  width: 5.07rem;
+  margin: 0 auto;
+  background: url(../../../images/gomeplus/task-share.png) no-repeat;
+  background-size: 5.07rem 0.47rem;
+}
+.content .task-share-txt .share-num {
+  left: 3.6rem;
+}
+.content .task-sale-txt {
+  width: 3.34rem;
+  margin: 0 auto;
+  background: url(../../../images/gomeplus/task-sale.png) no-repeat;
+  background-size: 3.34rem 0.47rem;
+}
+.content .task-sale-txt .sale-num {
+  left: 1.91rem;
+}
+.content .task-invhy-txt {
+  width: 3.34rem;
+  margin: 0 auto;
+  background: url(../../../images/gomeplus/task-invite-hy.png) no-repeat;
+  background-size: 3.37rem 0.47rem;
+}
+.content .task-invhy-txt .invhy-num {
+  left: 1.92rem;
+}
+.content .task-invsj-txt {
+  width: 4.66rem;
+  margin: 0 auto;
+  background: url(../../../images/gomeplus/task-invite-sj.png) no-repeat;
+  background-size: 4.67rem 0.47rem;
+}
+.content .task-invsj-txt .invsj-num {
+  left: 1.9rem;
+}
+.content .reward-txt {
+  width: 4.33rem;
+  height: 0.61rem;
+  margin: 0.22rem auto 0;
+  background: url(../../../images/gomeplus/task-reward.png) no-repeat;
+  background-size: 4.33rem 0.61rem;
+}
+.content .reward-txt .reward-coin {
+  font-size: 0.7rem;
+  margin-left: 1.22rem;
+  margin-right: 1.9rem;
+  line-height: 0.6rem;
+  text-align: center;
+  display: block;
+}
+.content p {
+  margin-top: 0.98rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+.content p span {
+  display: block;
+}
+
+.xin-btn {
+  width: 3.08rem;
+  margin: 0.3rem auto 0;
+}
+
+.bt-link {
+  font-size: 0.3rem;
+  float: right;
+  color: #333;
+  margin-right: 1.1rem;
+}
+.bt-link span {
+  font-family: "瀹嬩綋";
+}
