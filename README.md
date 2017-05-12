@@ -60,10 +60,11 @@ soundjs<br/>
 preloadjs<br/>
 
 # localStorage
-`localStorage.setItem(name,value)==>设置<br/>
+```
+localStorage.setItem(name,value)==>设置<br/>
 localStorage.getItem(name)==>获取value<br/>
 localStorage.clear()==>清数据<br/>
-`
+```
 # form表单的提交
 action=“要提交的地址”<br/>
 method="get/post"<br/>
