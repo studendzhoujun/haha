@@ -67,8 +67,12 @@ localStorage.removeItem(name)==>删除指定name
 localStorage.clear()==>清数据所有
 ```
 ** 优势
-* 1.dkdjkd
-* 2.dalsdf
+* 1.localStorage扩展了cookie的大小限制(5M大小)
+* 2.localStorage可以将数据储存到本地可以做缓存使用
+** 局限
+* 1.浏览器的大小不统一,且只支持高级浏览器
+* 2.浏览器在隐私模式下读取不了localStorage
+* 3.读取localStorage是对字符串的读取,如果内容较大的话会消耗内存导致页面变卡
 
 # form表单的提交
 action=“要提交的地址”<br/>
