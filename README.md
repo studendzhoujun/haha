@@ -61,10 +61,15 @@ preloadjs<br/>
 
 # localStorage
 ```
-localStorage.setItem(name,value)==>设置<br/>
-localStorage.getItem(name)==>获取value<br/>
-localStorage.clear()==>清数据<br/>
+localStorage.setItem(name,value)==>设置
+localStorage.getItem(name)==>获取value
+localStorage.removeItem(name)==>删除指定name
+localStorage.clear()==>清数据所有
 ```
+** 优势
+* 1.dkdjkd
+* 2.dalsdf
+
 # form表单的提交
 action=“要提交的地址”<br/>
 method="get/post"<br/>
