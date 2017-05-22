@@ -1,7 +1,7 @@
 
 ![img](https://github.com/studendzhoujun/abc/blob/master/src/images/loading-1.gif)
 # JavaScript
-![click](test.md)
+[click](test.md)
 # 10 things to master to become a good JavaScript Developer
 * Number 10 How does JavaScript work?<br/>
 * Number 9 How to test JavaScript?<br/>
