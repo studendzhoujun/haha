@@ -1,7 +1,6 @@
 
 ![img](https://github.com/studendzhoujun/abc/blob/master/src/images/loading-1.gif)
 # JavaScript
-[click](test.md)
 # [10 things to master to become a good JavaScript Developer](developer.md)
 
 # Chrome调试工具还是很不错的developer.chrome.com
