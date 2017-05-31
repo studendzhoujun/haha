@@ -72,3 +72,9 @@ onsubmit=" return false/true"---阻止提交/提交
 # 函数命名问题
 
 # 脚手架
+
+# call OR apply
+```
+fn.call(this,args);
+fn.apply(this,[args]);
+```
