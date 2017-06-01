@@ -3,6 +3,7 @@
 # JavaScript
 # [10 things to master to become a good JavaScript Developer](developer.md)
 # [git相关](git.md)
+# [vue相关](vue.md)
 # Chrome调试工具还是很不错的developer.chrome.com
 * 好像要翻墙
 
