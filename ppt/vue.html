@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>vue分享</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	<style>
+        .blue{color:#42affa}
+		.red{color:red}
+		.left{
+			text-align: left
+		}
+    </style>
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<img style="border:none;background:#222" src="./images/logo.png">
+				<h1>Vue.js</h1>
+
+			</section>
+
+			<section>
+				<section style="position:relative">
+				   <h2>before</h2>
+				<pre>
+					<code class="hljs" data-trim contenteditable>
+<div id="app">
+  <ul>
+    <li v-for="item in items">{{item}}</li>
+  </ul>
+</div>
+var vueObj = new Vue({
+    el: '#app',
+    data: {
+            items: [],
+          }
+});
+
+function getMore(){
+	......
+	vueObj.items.push(item)
+}
+					</code>
+				</pre>
+					<p class="fragment blue" style="position:absolute;right:-150px;top:100px;font-size:30px">只需关心数据层</p>
+					<p class="fragment red" style="position:absolute;right:-150px;top:150px;font-size:30px">没有组件化的概念</p>
+					<p class="fragment red" style="position:absolute;right:-150px;top:200px;font-size:30px">没有构建步骤</p>
+			   </section>
+			   <section>
+				    <h2>now</h2>
+                    <pre>
+						<code>
+import Vue from 'vue'
+import App from './components/App.vue'
+import store from './stores'
+new Vue({
+  el: '#app',
+  store,
+  render: h => h(App)
+})						
+						</code>
+					</pre>
+					<p class="fragment blue" style="position:absolute;right:-150px;top:100px;font-size:30px">ES6</p>
+					<p class="fragment blue" style="position:absolute;right:-150px;top:150px;font-size:30px">组件化</p>
+					<p class="fragment blue" style="position:absolute;right:-150px;top:200px;font-size:30px">webpack</p>		<p class="fragment blue" style="position:absolute;right:-150px;top:250px;font-size:30px">vuex</p>		
+			   </section>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section>
+				<section>
+					<h2>vue.js是啥?</h2>
+					<div style="font-size:20px" class="fragment left">
+						<a href="https://cn.vuejs.org/v2/guide/index.html#Vue-js-是什么">Vue.js</a>
+						（读音 /vjuː/，类似于 view） 是一套构建用户界面的渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与单文件组件和 Vue 生态系统支持的库结合使用时，Vue 也完全能够为复杂的单页应用程序提供驱动。
+如果你是有经验的前端开发者，想知道 Vue.js 与其它库/框架的区别，<a href="https://cn.vuejs.org/v2/guide/comparison.html">查看对比其它框架。</a>
+					</div>
+				</section>
+				<section>
+					<h2>一个简单的例子</h2>
+					<pre>
+						<code>
+<div id="app">
+  {{ message }}
+</div>							
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello world!'
+  }
+})		
+Hello world!				</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>vue生命周期(Lifecycle hooks)</h3>
+					<table>
+					<thead style="font-size:30px">
+						<tr>
+							<th>vue1.0+</th>
+							<th>vue2.0+</th>
+							<th>description</th>
+						</tr>
+					</thead>
+					<tbody style="font-size:21px">
+						<tr>
+							<td>init</td>
+							<td>beforeCreate</td>
+							<td>组件实例刚被创建,组件属性计算之前</td>
+						</tr>
+						<tr>
+							<td>created</td>
+							<td>created</td>
+							<td>组件实例创建完成,属性已绑定,但DOM还未生成,$el属性还不存在</td>
+						</tr>
+						<tr>
+							<td>beforeCompile</td>
+							<td>beforeMount</td>
+							<td>模板编译/挂载之前</td>
+						</tr>
+						<tr>
+							<td>compiled</td>
+							<td>mounted</td>
+							<td>模板编译/挂载之后</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>beforeUpdate</td>
+							<td>组件更新之前</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>updated</td>
+							<td>组件更新之后</td>
+						</tr>
+						<tr>
+							<td>beforeDestory</td>
+							<td>beforeDestory</td>
+							<td>组件销毁前调用</td>
+						</tr>
+						<tr>
+							<td>destoryed</td>
+							<td>destoryed</td>
+							<td>组件销毁后调用</td>
+						</tr>
+					</tbody>
+				</table>
+				</section>
+			    <section>
+					<pre style="width:100%;height:100%">
+						<code style="width:100%;height:100%;max-height:500px;font-size:15px">
+ var app = new Vue({
+      el: '#app',
+      data: {
+          message : "xuxiao is boy" 
+      },
+       beforeCreate: function () {
+                console.group('beforeCreate 创建前状态===============》');
+               console.log("%c%s", "color:red" , "el     : " + this.$el); 
+               console.log("%c%s", "color:red","data   : " + this.$data);  
+               console.log("%c%s", "color:red","message: " + this.message)  
+        },
+        created: function () {
+            console.group('created 创建完毕状态===============》');
+            console.log("%c%s", "color:red","el     : " + this.$el); 
+               console.log("%c%s", "color:red","data   : " + this.$data); 
+               console.log("%c%s", "color:red","message: " + this.message); 
+        },
+        beforeMount: function () {
+            console.group('beforeMount 挂载前状态===============》');
+            console.log("%c%s", "color:red","el     : " + (this.$el)); 
+            console.log(this.$el);
+               console.log("%c%s", "color:red","data   : " + this.$data);   
+               console.log("%c%s", "color:red","message: " + this.message); 
+        },
+        mounted: function () {
+            console.group('mounted 挂载结束状态===============》');
+            console.log("%c%s", "color:red","el     : " + this.$el); 
+            console.log(this.$el);    
+               console.log("%c%s", "color:red","data   : " + this.$data); 
+               console.log("%c%s", "color:red","message: " + this.message); 
+        }
+    })
+</script>	
+							
+						</code>
+					</pre>
+				</section>
+				<section>
+					<img src="./images/cycle.png">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>基础知识</h2>
+					<p class="left" style="font-size:20px">数据绑定最基础的形式是文本插值，使用 <span class="fragment highlight-red">"Mustache"</span> 语法(双大括号)</p>
+					<pre>
+						<code>
+<span>Message: {{ msg }}</span>
+支持JavaScript 表达式
+{{ number + 1 }}
+{{ ok ? 'YES' : 'NO' }}
+{{ message.split('').reverse().join('') }}					
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>指令</h2>
+                    <pre>
+                        <code>
+<span v-text="msg"></span>
+<!-- 和下面的一样 -->
+<span>{{msg}}</span>
+<!-- 完整语法 -->
+<a v-bind:href="url"></a>
+<!-- 缩写 -->
+<a :href="url"></a>
+<!-- 完整语法 -->
+<a v-on:click="doSomething"></a>
+<!-- 缩写 -->
+<a @click="doSomething"></a>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<pre>
+						<code>
+条件渲染
+<h1 v-if="ok">Yes</h1>
+<h2 v-else>NO</h2>
+<h1 v-show="ok">看不看的见我!</h1>
+列表渲染
+<div v-for="(index, item) in items">
+  {{ index }} {{ item }}
+</div>
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>计算属性</h2>
+					<div style="font-size:20px">在模板中表达式非常便利，但是它们实际上只用于简单的操作。模板是为了描述视图的结构。在模板中放入太多的逻辑会让模板过重且难以维护。这就是为什么 Vue.js 将绑定表达式限制为一个表达式。如果需要多于一个表达式的逻辑，应当使用计算属性</div>
+                    <pre>
+                        <code>
+new Vue({
+  el: '#example',
+  data: {
+    a: 1
+  },
+  computed: {
+    // 一个计算属性的 getter
+    b: function () {
+      // `this` 指向 vm 实例
+      return this.a + 1
+    }
+  }
+})
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Class绑定</h2>
+                    <pre>
+                        <code style="max-height:600px">
+对象语法
+<div class="static" v-bind:class="{ 'class-a': isA, 'class-b': isB }"></div>
+data: {
+  isA: true,
+  isB: false
+}
+<div v-bind:class="classObject"></div>
+data: {
+  classObject: {
+    'class-a': true,
+    'class-b': false
+  }
+}
+数组语法
+<div v-bind:class="[classA, classB]"></div>
+data: {
+  classA: 'class-a',
+  classB: 'class-b'
+}	
+			            </code>
+					</pre>
+				</section>
+				<section>
+					<h2>方法与事件处理</h2>
+					<pre>
+						<code>
+用v-on指令监听DOM事件
+<div id="example">
+  <button v-on:click="greet">Greet</button>
+</div>
+事件修饰符
+<!-- 阻止单击事件冒泡 -->
+<a v-on:click.stop="doThis"></a>
+<!-- 提交事件不再重载页面 -->
+<form v-on:submit.prevent="onSubmit"></form>
+<!-- 修饰符可以串联 -->
+ <a v-on:click.stop.prevent="doThat"></a> 
+						</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+			  <section>
+				  <h2>组件</h2>
+				  <p style="font-size:25px" class="fragment left">组件 (Component) 是 Vue.js 最强大的功能之一。组件可以扩展 HTML 元素，封装可重用的代码,在较高层面上，组件是自定义元素</p>
+			  </section>
+			  <section>
+				<h2>全局组件</h2>
+				<p style="font-size:25px">在之前Vue项目中，我们使用 Vue.component 来定义全局组件，紧接着用<br/> <span class="fragment highlight-blue" >new Vue({ el: '#container '})</span>在每个页面内指定一个容器元素。</p>
+				<ul style="margin:0;padding:0;list-style:none;font-size:23px">
+					<li class="fragment red">强制要求每个 component 中的命名不得重复</li>
+					<li class="fragment red">字符串模板缺乏语法高亮</li>
+					<li class="fragment red">不支持CSS</li>
+					<li class="fragment red">没有构建步骤</li>
+				</ul>
+				<pre class="fragment">
+					<code>
+// 定义
+var MyComponent = Vue.extend({
+  template: '<div>A custom component!</div>'
+})
+
+// 注册
+Vue.component('my-component', MyComponent)
+
+// 创建根实例
+new Vue({
+  el: '#example'
+})						
+					</code>
+				</pre>
+			  </section>
+			  <section>
+				  <p>单文件组件(hello.vue)</p>
+				  <pre>
+					  <code style="max-height:700px;padding:0px">
+<template>
+	<p>{{greeting}} World!</p>
+	<other-componet></other-componet>
+</template>
+<script>
+   import otherComponent from './otherComponent.vue'
+   export default {
+	   data(){
+		   return {
+			   greeting:'Hello'
+		   }
+	   },
+	   components:{
+		   otherComponent
+	   }
+   }
+</script>
+<style>
+	p{
+		font-size:12px;
+		text-align:center;
+	}
+</style>
+					  </code>
+				  </pre>
+			  </section>
+			  <section>
+				  <h2>prop</h2>
+				  <p style="font-size:30px" class="left">使用prop传递数据</p>
+				  <p style="font-size:20px" class="left">组件实例的作用域是孤立的。这意味着不能 (也不应该) 在子组件的模板内直接引用父组件的数据。要让子组件使用父组件的数据，我们需要通过子组件的 props 选项。</p>
+					<pre>
+						<code>
+<template>
+    <div class="toast">
+        <div v-if="isShow" class="toast">
+                {{text}}
+        </div>
+    </div>
+</template>
+<script>
+ export default{
+   props:['text']
+ }
+</script>
+						</code>
+					</pre>
+			  </section>
+			  <section>
+				  <h2>prop验证</h2>
+				   <p style="font-size:20px" class="left">我们可以为组件的 props 指定验证规格。如果传入的数据不符合规格，Vue 会发出警告。当组件给其他人使用时，这很有用。</p>
+					<pre>
+						<code>
+prop:{                    //布尔类型
+   type: Boolean,
+   default: true
+}
+propA: {                  // 必传且是字符串类型
+    type: String,
+    required: true
+},
+propB: {                  // 数字，有默认值
+    type: Number,
+    default: 100
+}
+propC:{                   //函数
+	type:Function
+}					</code>
+					</pre>
+			  </section>
+			  <section>
+				  <h2>slot</h2>
+				  <p style="font-size:30px;">内容分发</p>
+				  <pre>
+					  <code style="max-height:700px">
+<!-- child组件 -->
+<div>
+ <h2>小标题<slot></slot></h2>
+</div>
+<!-- 父组件 -->
+<div>
+ <h1>大标题</h1>
+ <child>
+  <p>副标题</p>
+ </child>
+</div>
+<!-- 结果 -->
+<div>
+ <h1>大标题</h1>
+ <h2>小标题<p>副标题</p></h2>
+</div>
+					  </code>
+				  </pre>
+			  </section>
+			  <section>
+				  <p>组件与组件,非父子组件之之间的通信？</p>
+			  </section>
+			</section> 
+
+			<section>
+				<section>
+				<h2>vuex</h2>
+				<p class="fragment blue left">vuex是什么?</p>
+				<p style="font-size:20px" class="fragment left">Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式</p>
+				<p style="font-size:20px" class="fragment left">每一个 Vuex 应用的核心就是 store(仓库)."store" 基本上就是一个容器，它包含着你的应用中大部分的状态(state)</p>
+				<p style="font-size:20px" class="fragment left">Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。</p>
+				<p style="font-size:20px" class="fragment left">你不能直接改变 store 中的状态。改变 store 中的状态的唯一途径就是显式地提交(commit) mutations</p>
+				<p style="font-size:20px" class="fragment left">核心概念:
+					<span class="fragment highlight-green">state</span>--
+					<span class="fragment highlight-green">getters</span>--
+					<span class="fragment highlight-green">mutations</span>--
+					<span class="fragment highlight-green">actions</span>--
+					<span class="fragment highlight-red">modules</span>
+				</p>
+				</section>
+			    <section>
+                    <pre>
+						<code>
+import Vue from 'vue'
+import Vuex from 'vuex'
+import mutations from './mutations'
+import actions from './actions'
+import getters from './getters.js'
+Vue.use(Vuex)
+export default new Vuex.Store({
+    state: {
+        data:data
+    },
+    mutations,
+    actions,
+    getters,
+});							
+						</code>
+					</pre>						
+				</section>
+				<section>
+					<h3>state---单一状态树</h3>
+					<p class="left" style="font-size:25px;">Vuex 使用 单一状态树,用一个对象就包含了全部的应用层级状态</p>
+					<p class="left" style="font-size:25px;">在Vue组件中获得 Vuex 状态?</p>
+					<p class="left" style="font-size:25px;">在实例中注册 store 选项，该 store 实例会注入到根组件下的所有子组件中</p>
+					<p class="left blue" style="font-size:25px;">this.$store.state</p>
+				</section>
+				<section>
+					<h3>getters---store的计算属性</h3>
+					<p class="left" style="font-size:25px;">getters相当于是一个大的computed</p>
+					<p class="left" style="font-size:25px;">getters会暴露为 store.getters 对象：</p>
+					<p class="left" style="font-size:25px;">在组件中</p>
+					<p class="left blue" style="font-size:25px;">this.$store.getters</p>
+				</section>
+				<section>
+					<h3>mutations---更改store中的状态</h3>
+					<p class="left" style="font-size:25px;">更改 Vuex 的 store 中的状态的唯一方法是提交 mutation</p>
+					<pre>
+						<code>
+const store=new Vuex.Store({
+	state:{
+		count:1
+	},
+	mutations:{
+		increment(state){
+			state.count++
+		}
+	}
+})							
+						</code>
+					</pre>
+					<p class="fragment left highlight-green" style="font-size:25px;">store.commit('increment')</p>
+				</section>
+				<section>
+					<h3>actions</h3>
+					<p class="left" style="font-size:25px;">Action 提交的是 mutation，而不是直接变更状态。</p>
+					<p class="left" style="font-size:25px;">所有的异步操作都应该放在actions里执行</p>
+					<p class="left" style="font-size:25px;">在组件中分发action</p>
+					<p class="left blue" style="font-size:25px;">this.$store.dispatch('xxx')</p>
+				</section>
+			</section>
+			<section>
+				<h2>好处</h2>
+				<ul style="list-style:none">
+					<li class="blue">1.规范书写代码的风格</li>
+					<li class="blue">2.可把页面组件化、模块化</li>
+					<li class="blue">3.解放双手,让框架来进行DOM操作</li>
+					<li class="blue">4.代码简单明了,业务逻辑清晰,其他人接手代码容易上手</li>
+				</ul>
+			</section>
+			<section style="text-align: left;">
+				<h1>THE END</h1>
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+
+</body>
+
+</html>
