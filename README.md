@@ -1,5 +1,5 @@
 
-![img](https://github.com/studendzhoujun/abc/blob/master/src/images/loading-1.gif)
+![img](https://github.com/studendzhoujun/jun/blob/master/static/img/txx.png)
 # JavaScript
 # [10 things to master to become a good JavaScript Developer](developer.md)
 # [git相关](git.md)
