@@ -2,6 +2,7 @@
 git clone 地址<br/>
 git status 状态<br/>
 git add  添加<br/>
+git add . <br/>
 git commit 提交<br/>
 git pull 拉新<br/>
 git push 推送<br/>
