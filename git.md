@@ -1,5 +1,6 @@
 # git常用命令
 git clone 地址<br/>
+git clone -b name<br/>
 git status 状态<br/>
 git add  添加<br/>
 git commit 提交<br/>
