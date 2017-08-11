@@ -1,5 +1,6 @@
 # git常用命令
 git clone 地址<br/>
+git clone -b name<br/>
 git status 状态<br/>
 git add  添加<br/>
 git add . <br/>
@@ -7,9 +8,11 @@ git commit 提交<br/>
 git pull 拉新<br/>
 git push 推送<br/>
 git branch 分支<br/>
+git branch -a <br/>
 git checkout 切换分支<br/>
 git log 日志<br/>
 git reset 切版本<br/>
+git reset --hard number<br/>
 git merge 合并代码<br/>
 # git忽略文件的创建
 在所要忽略的目录下用命令工具touch .gitignore此时该目录下会生成一个文件，用vim或编辑器打开该文件，在里面设置忽略规则即可<br/>
