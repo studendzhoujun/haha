@@ -1,6 +1,6 @@
 # git常用命令
 git clone url<br/>
-git clone -b name<br/>
+git clone -b name url<br/>
 git status 状态<br/>
 git add  添加<br/>
 git add . <br/>
