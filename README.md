@@ -78,3 +78,10 @@ fn.call(this,args);
 fn.apply(this,[args]);
 ```
 # git reset --hard 版本号
+
+# 数字千分位处理
+  ```
+  function toThousands(num) {
+    return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+  }
+  ```
