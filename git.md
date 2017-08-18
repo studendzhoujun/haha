@@ -16,6 +16,9 @@ git reset --hard number<br/>
 git merge 合并代码<br/>
 # git忽略文件的创建
 在所要忽略的目录下用命令工具touch .gitignore此时该目录下会生成一个文件，用vim或编辑器打开该文件，在里面设置忽略规则即可<br/>
+```
+ vim .gitignore
+```
 ### 此#为注释 – 将被 Git 忽略<br/>
 * .a # 忽略所有 .a 结尾的文件<br/>
 * !lib.a # 但 lib.a 除外<br/>
