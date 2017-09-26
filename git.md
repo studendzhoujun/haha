@@ -25,3 +25,18 @@ git merge 合并代码<br/>
 * /TODO # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO<br/>
 * build/ # 忽略 build/ 目录下的所有文件<br/>
 * doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt<br/>
+
+# git仓库迁移
+```
+1.从原地址克隆一份裸版本库，比如原本托管于 GitHub。
+
+git clone –bare git://github.com/username/project.git
+
+2. 然后到新的 Git 服务器上创建一个新项目，比如 GitCafe。
+
+3. 以镜像推送的方式上传代码到 GitCafe 服务器上。
+
+cd project.git
+
+git push –mirror git@gitcafe.com/username/newproject.git
+```
