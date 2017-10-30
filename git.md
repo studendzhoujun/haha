@@ -40,3 +40,7 @@ cd project.git
 
 git push –mirror git@gitcafe.com/username/newproject.git
 ```
+
+# git版本回退
+
+`git reset --hard 版本号`
