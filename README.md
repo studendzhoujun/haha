@@ -1,9 +1,10 @@
-
 ![img](https://github.com/studendzhoujun/jun/blob/master/static/img/txx.png)
+
 # JavaScript
-# [10 things to master to become a good JavaScript Developer](developer.md)
-# [git相关](git.md)
-# [vue相关](vue.md)
+
+* [10 things to master to become a good JavaScript Developer](developer.md)
+* [git相关](git.md)
+* [vue相关](vue.md)
 
 # H5标签语义化
 1. 有利于搜索引擎的抓取(SEO优化)<br/>
