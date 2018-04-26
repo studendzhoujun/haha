@@ -46,4 +46,7 @@ git push –mirror git@gitcafe.com/username/newproject.git
 `git reset --hard 版本号`
 
 # git修改远程仓库地址
-`git remote set-url origin URL`
+```
+  git remote rm origin
+  git remote add origin [url]
+```
