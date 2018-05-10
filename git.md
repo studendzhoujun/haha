@@ -50,3 +50,13 @@ git push –mirror git@gitcafe.com/username/newproject.git
   git remote rm origin
   git remote add origin [url]
 ```
+
+# npm 
+```
+ # 发布
+ npm publish
+ # 发布tag版本
+ npm publish --tag name
+ # 将tag版本升到稳定版
+ npm dist-tag add xxx@xxx latest
+```
