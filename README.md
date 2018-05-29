@@ -30,17 +30,13 @@ TCP/UDP<br/>
 UDP的特性是：数据报，无连接，简单，不可靠，会丢包，会乱序<br/>
 TCP的特性是：流式，有连接，复杂，可靠，延迟较大、带宽占用较大<br/>
 
-# 内嵌调试问题
-## webview<br/>
-## ios----safari浏览器调试<br/>
-## android----chrome浏览器调试<br/>
-# H5小游戏框架createjs
+## H5小游戏框架createjs
 Easeljs<br/>
 Tweenjs<br/>
 soundjs<br/>
 preloadjs<br/>
 
-# localStorage
+## localStorage
 ```
 localStorage.setItem(name,value)==>设置
 localStorage.getItem(name)==>获取value
@@ -56,24 +52,18 @@ localStorage.clear()==>清数据所有
 * 2.浏览器在隐私模式下读取不了localStorage
 * 3.读取localStorage是对字符串的读取,如果内容较大的话会消耗内存导致页面变卡
 
-# form表单的提交
+## form表单的提交
 action=“要提交的地址”<br/>
 method="get/post"<br/>
 onsubmit=" return false/true"---阻止提交/提交
 
-# bind(this)
-# ECMA核心解释器+DOM+BOM
-# 函数命名问题
-
-# 脚手架
-
-# call OR apply
+## call OR apply
 ```
 fn.call(this,args);
 fn.apply(this,[args]);
 ```
 
-# 数字千分位处理
+## 数字千分位处理
   ```
   function toThousands(num) {
     return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
