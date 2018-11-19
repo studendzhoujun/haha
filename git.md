@@ -63,4 +63,6 @@ git push –mirror git@gitcafe.com/username/newproject.git
  npm config set registry xxx
  # 淘宝源
  https://registry.npm.taobao.org
+ # npm官方源
+ https://registry.npmjs.org/
 ```
