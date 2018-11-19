@@ -59,4 +59,6 @@ git push –mirror git@gitcafe.com/username/newproject.git
  npm publish --tag name
  # 将tag版本升到稳定版
  npm dist-tag add xxx@xxx latest
+ # npm切源
+ npm config set registry xxx
 ```
