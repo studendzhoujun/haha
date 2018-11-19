@@ -61,4 +61,6 @@ git push –mirror git@gitcafe.com/username/newproject.git
  npm dist-tag add xxx@xxx latest
  # npm切源
  npm config set registry xxx
+ # 淘宝源
+ https://registry.npm.taobao.org
 ```
