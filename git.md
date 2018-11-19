@@ -14,6 +14,8 @@ git log 日志<br/>
 git reset 切版本<br/>
 git reset --hard number<br/>
 git merge 合并代码<br/>
+git merge --squash 合并代码忽略提交记录<br/>
+git log -p 文件名  查看文件修改记录<br/>
 # git忽略文件的创建
 在所要忽略的目录下用命令工具touch .gitignore此时该目录下会生成一个文件，用vim或编辑器打开该文件，在里面设置忽略规则即可<br/>
 ```
