@@ -14,6 +14,8 @@
 ## cors 跨域
 1. cookie跨域遵循同源策略
 2. 请求跨域-jsonp-cors
+3. cors前端设置`xhr.withCredentials = true`
+4. cors后端设置`Access-Control-Allow-Origin--Access-Control-Allow-Credentials`
 ## Node.js
 事件驱动，非阻塞<br/>
 阻塞与非阻塞--阻塞需等待，非阻塞无需等待，但需不停询问。
