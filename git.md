@@ -67,4 +67,6 @@ git push –mirror git@gitcafe.com/username/newproject.git
  https://registry.npm.taobao.org
  # npm官方源
  https://registry.npmjs.org/
+ # 获取当前npm源
+ npm get registry
 ```
