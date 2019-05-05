@@ -69,4 +69,6 @@ git push –mirror git@gitcafe.com/username/newproject.git
  https://registry.npmjs.org/
  # 获取当前npm源
  npm get registry
+ # 添加用户
+ npm adduser --registry=xxxxxx
 ```
