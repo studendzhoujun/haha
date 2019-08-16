@@ -74,6 +74,156 @@
 					<p>3.会基本的 <span class="fragment highlight-red">html</span> <span class="fragment highlight-blue">css</span> <span class="fragment highlight-green">javaScript</span>知识</p>
 					<p class="fragment fade-up">4.按照weex提供的基础组件来开发</p>
 				</section>
+				<section>
+                    <h2>组件</h2>
+				</section>
+				<section data-markdown>
+						<script type="text/template">
+							```
+							  # <div>
+							  # <div>是通用容器
+							```
+							```
+* 不要在 <div> 中直接添加文本，而要使用 <text> 组件。
+* 在 Weex 中，<div> 不可滚动。
+* 要控制 <div> 的层级，建议不要超过14层，否则会很影响页面性能
+
+							```
+							```
+							   # 子组件
+							```
+							```
+							   * <div> 支持各种类型的子元素，包括 <div> 自己。
+							```
+						</script>		
+				</section>
+				<section data-markdown>
+						<script type="text/template">
+							```
+							  # <text>
+							  # <text> 是 Weex 内置的组件，用来将文本按照指定的样式渲染出来.
+							```
+							```
+* <text> 里直接写文本头尾空白会被过滤，如果需要保留头尾空白字符，暂时只能通过数据绑定的方式
+
+							```
+							```
+							   # 子组件
+							```
+							```
+							   * 不支持子组件。
+							```
+						</script>		
+				</section>
+				<section data-markdown>
+						<script type="text/template">
+							```
+							  # <image>
+							  # <image> 用于在界面中显示单个图片。
+							```
+							```
+* 在代码中请使用 <image> 标签
+* <image> 必须指定样式中的宽度和高度
+
+							```
+							```
+							   # 子组件
+							```
+							```
+							* 不支持子组件。
+							```
+						</script>		
+				</section>
+				<section>
+					<ol>
+						<li class="fragment">list</li>
+						<li class="fragment">scroller</li>
+						<li class="fragment">slider</li>
+						<li class="fragment">loading</li>
+						<li class="fragment">input</li>
+					</ol>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h5>内置模块</h5>
+				</section>
+				<section  style="text-align: left;"> 
+				 <p>animation</p>
+				 <p style="font-size:20px;"><span style="color:rgb(236, 167, 17)">animation </span>模块可以用来在组件上执行动画。JS-Animation可以对组件执行一系列简单的变换 (位置、大小、旋转角度、背景颜色和不透明度)</p>
+				 <pre>
+					 <code>
+animation.transition(ref1, {
+ styles: {
+  backgroundColor: '#FF0000',
+  transform: 'translate(250px, 100px)',
+ },
+  duration: 800, //ms
+  timingFunction: 'ease',
+  needLayout:false,
+  delay: 0 //ms
+}, function () {
+  modal.toast({ message: 'animation finished.' })
+})
+						</code>
+					</pre>
+				</section>
+				<section style="text-align: left;">
+				   <p>modal</p>
+				   <p style="font-size:20px;"><span style="color:rgb(236, 167, 17)">modal </span>模块提供了以下展示消息框的 API：<span style="color:aqua;">toast、alert、confirm </span>和 <span style="color:aqua;">prompt</span></p>
+				   <pre>
+					   <code>
+var modal = weex.requireModule('modal')
+modal.toast({
+  message: 'This is a toast',
+  duration: 0.3
+})
+					   </code>
+				   </pre>
+				   <pre>
+						<code>
+var modal = weex.requireModule('modal')
+modal.alert({
+  message: 'This is a alert',
+  okTitle: '确认'
+}, function () {
+  console.log('alert callback')
+})
+						</code>
+					</pre>      
+				</section>
+				<section style="text-align: left;">
+					<p>stream</p>
+					<p style="font-size:20px;"><span style="color:rgb(236, 167, 17)">stream </span>模块提供了基本的网络请求能,例如 <span style="color:aqua">GET POST </span>请求等，用于在组件的生命周期内与服务端进行交互</p>
+<pre>
+	<code>
+stream.fetch({
+  method: 'GET',
+  url: API,
+  type:'json'
+}, function(res) {
+  if(res){
+   modal.toast({
+    message: 'Network ok!',
+    duration: 3
+   });
+  }
+});
+	</code>
+</pre>
+				</section>
+				<section>
+					<ol>
+						<li class="fragment">clipboard</li>
+						<li class="fragment">navigator</li>
+						<li class="fragment">storage</li>
+						<li class="fragment">picker</li>
+						<li class="fragment">webview</li>
+					</ol>
+				</section>
+				<section>
+						<p>了解完以上这些 我们就可以愉快的开发了</p>
+				</section>
 			</section>
 			<section>
 				<h2>weex初体验</h2>
@@ -106,7 +256,7 @@
 				</section>
 				<section>
 						<h2>mcp-kit</h2>
-						<img width="400" height="600" data-src="./images/wx-3.jpg" alt="Down arrow">			
+						<img width="450" height="500" data-src="./images/wx-3.jpg" alt="Down arrow">			
 				</section>
 			</section>
 
@@ -156,30 +306,38 @@
 			</section>
 			<!-- table -->
 			<section>
-				<h2>Tabular Tables</h2>
+				<h2>各大跨平台框架比较</h2>
 				<table>
 					<thead>
 						<tr>
-							<th>Item</th>
-							<th>Value</th>
-							<th>Quantity</th>
+							<th>框架</th>
+							<th>引擎</th>
+							<th>语言</th>
+							<th>重度</th>
+							<th>上手</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Apples</td>
-							<td>$1</td>
-							<td>7</td>
+							<td>Flutter</td>
+							<td>Flutter engine</td>
+							<td>Dart</td>
+							<td>重</td>
+							<td>难</td>
 						</tr>
 						<tr>
-							<td>Lemonade</td>
-							<td>$2</td>
-							<td>18</td>
+							<td>Weex</td>
+							<td>JSCORE</td>
+							<td>vue,Rax</td>
+							<td>一般</td>
+							<td>较易</td>
 						</tr>
 						<tr>
-							<td>Bread</td>
-							<td>$3</td>
-							<td>2</td>
+							<td>React Native</td>
+							<td>JS V8</td>
+							<td>React</td>
+							<td>较重</td>
+							<td>一般</td>
 						</tr>
 					</tbody>
 				</table>
