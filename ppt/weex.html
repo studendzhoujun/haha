@@ -28,6 +28,12 @@
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
+	<style>
+	  .bg{
+        background:url(./images/bg1.png) no-repeat;
+		background-position:right bottom;
+	  }
+	</style>
 
 	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -36,7 +42,7 @@
 
 <body>
 
-	<div class="reveal">
+	<div class="reveal bg">
 
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
@@ -70,22 +76,23 @@
 					<h2>weex中的前端框架</h2>
 				</section>
 			    <section>
-				   <p class="fragment">贴近前端生态</p>
+				   <!-- <p class="fragment">贴近前端生态</p> -->
 					<img width="700" height="300" data-src="./images/vuerax.png" alt="Down arrow">
 					<p class="fragment" style="font-size:20px;">Vue.js 是一个不断进化中的前端框架</p>
 					<p class="fragment" style="font-size:20px;">Rax提供类React语法和兼容性的前端框架</p>
-					<p class="fragment" style="font-size:20px;text-align:left;">Weex 拥抱已有的 Web 生态，你可以使用现代化的前端技术开发移动应用。 Weex 支持了最常用 CSS 样式以及最流行的前端框架，如 Vue 和 Rax，在未来或许还可以支持更多。</p>
+					<p class="fragment" style="font-size:20px;">Weex 拥抱已有的 Web 生态，你可以使用现代化的前端技术开发移动应用。</p>
+					<p class="fragment" style="font-size:20px;"> Weex 支持了最常用 CSS 样式以及最流行的前端框架，在未来或许还可以支持更多。</p>
 				</section>
 				<section>
-					<h2>JS Framework</h2>
-					<p>weex 为什么能支持多个前端框架，又能跨平台渲染</p>
+					<h2 class="fragment" style="color:aquamarine">JS Framework</h2>
+					<p>weex 为什么能支持多个前端框架，又能跨平台渲染 ?</p>
 				</section>
 				<section>
 					<img width="700" height="300" data-src="./images/wx-4.png" alt="Down arrow">
-					<p style="font-size:24px;">JS Framework 介于前端框架和原生渲染引擎之间，处于承上启下的位置</p>
-					<p style="font-size:24px;"> Vue 和 Rax 对 Weex 而言只属于语法层，或者称之为 DSL (Domain Specific Language)</p>
-					<p style="font-size:24px;"> Vue 和 Rax 都是用来描述页面结构以及开发范式的</p>
-					<p style="font-size:24px;">最终都会通过JS Framework 提供的接口来调用原生功能并且渲染真实 UI</p>
+					<p class="fragment"  style="font-size:24px;">JS Framework 介于前端框架和原生渲染引擎之间，处于承上启下的位置</p>
+					<p class="fragment"  style="font-size:24px;"> Vue 和 Rax 对 Weex 而言只属于语法层，或者称之为 DSL (Domain Specific Language)</p>
+					<p class="fragment" style="font-size:24px;"> Vue 和 Rax 都是用来描述页面结构以及开发范式的</p>
+					<p class="fragment" style="font-size:24px;">最终都会通过JS Framework 提供的接口来调用原生功能去渲染真实 UI</p>
 				</section>
 				<section>
 					<h2>用vue.js来进行移动端应用的开发</h2>
@@ -171,7 +178,7 @@
 				</section>
 				<section  style="text-align: left;"> 
 				 <p>animation</p>
-				 <p style="font-size:20px;"><span style="color:rgb(236, 167, 17)">animation </span>模块可以用来在组件上执行动画。JS-Animation可以对组件执行一系列简单的变换 (位置、大小、旋转角度、背景颜色和不透明度)</p>
+				 <p style="font-size:20px;"><span style="color:rgb(236, 167, 17)">animation </span>模块可以用来在组件上执行动画。Animation可以对组件执行一系列简单的变换 (位置、大小、旋转角度、背景颜色等)</p>
 				 <pre>
 					 <code>
 animation.transition(ref1, {
@@ -261,7 +268,7 @@ stream.fetch({
 						```
 						  # 开发环境
 						  # weex提供了weex-toolkit 脚手架工具
-						  # 需要安装node.js和Weex Cli
+						  # 需要安装node.js
 						```
 						```
 						   weex -v //查看当前weex工具版本
