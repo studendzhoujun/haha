@@ -1,0 +1,28 @@
+/mall/cashier_url
+
+method: post
+
+request parameter:
+  {
+   	"applyNum": "120019091110012079",
+   	"type": "earnestMoney",
+   	"successUrl": ""
+  }
+
+
+
+ response result:
+
+ {
+
+   "resultCode": "SUCCESS",
+   "resultInfo": "",
+   "cashierUrl": "https://www.xxx.yyy/zzz"
+ }
+
+
+resultCode 
+   904  参数错误
+   302  用户未登录
+   cf_fang_001014  申请单不存在
+   cf_fang_001015 无效用户
