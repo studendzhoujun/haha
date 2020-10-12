@@ -8,7 +8,7 @@ git commit 提交<br/>
 git pull 拉新<br/>
 git push 推送<br/>
 git branch 分支<br/>
-git branch -a <br/>
+git branch -a  远程分支<br/>
 git checkout 切换分支<br/>
 git log 日志<br/>
 git reset 切版本<br/>
